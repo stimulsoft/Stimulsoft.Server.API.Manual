@@ -3,49 +3,18 @@
 **Stimulsoft Server** supports a Role-based Access Control. Role is an object that determines the level of user access to system resources. Members having the same role have the same rights of access to system objects. The most important property of the role is **StiRole.Permissions**. It is an object of the **StiRolePermissions** class that describes a set of permissions (**StiPermissions**) for system objects:
 
 
-**Permission**
-
-**Description**
-
-ItemCalendars
-
-Permissions for Calendars
-
-ItemCloudStorages
-
-Permissions for Cloud Storages
-
-ItemContactLists
-
-Permissions for Contactlists
-
-ItemDashboards
-
-Permissions for Dashboards
-
-ItemDataSources
-
-Permissions for Datasources
-
-ItemFiles
-
-Permissions for Files
-
-ItemFolders
-
-Permissions for Folder
-
-ItemReportSnapshots
-
-Permissions for ReportSnapshots
-
-ItemReportTemplates
-
-Permissions for ReportTemplates
-
-ItemSchedulers
-
-Permissions for Schedulers
+| **Permission** | **Description** |
+| --- | --- |
+| ItemCalendars | Permissions for Calendars |
+| ItemCloudStorages | Permissions for Cloud Storages |
+| ItemContactLists | Permissions for Contactlists |
+| ItemDashboards | Permissions for Dashboards |
+| ItemDataSources | Permissions for Datasources |
+| ItemFiles | Permissions for Files |
+| ItemFolders | Permissions for Folder |
+| ItemReportSnapshots | Permissions for ReportSnapshots |
+| ItemReportTemplates | Permissions for ReportTemplates |
+| ItemSchedulers | Permissions for Schedulers |
 
 * **None** - Denies all;
 

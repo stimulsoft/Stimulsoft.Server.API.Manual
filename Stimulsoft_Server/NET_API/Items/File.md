@@ -2,47 +2,47 @@
 
 For working with uploaded files, Stimulsoft Server has a special type of a **StiItem** - **StiFileItem**, which has some specific features and capabilities. **StiFileItem** is an element that provides storing files, uploaded by users. Some files contain data that can be used in the reports as a data source – these are XLS documents, CSV tables, DBF databases, JSON strings etc. Getting the structured data from these files is possible using the **StiFileItem.GetData** (**StiFileItem.GetDataAsync**) method. At creation of a StiFileItem you must specify the type of data which the loaded file contains. Allowed values listed in enumeration **StiFileType**:
 
-  * Unknown - Unsupported file type
+* Unknown - Unsupported file type
 
-  * ReportSnapshot - Rendered report
+* ReportSnapshot - Rendered report
 
-  * Pdf – PDF file
+* Pdf – PDF file
 
-  * Xps – XPS file
+* Xps – XPS file
 
-  * Html – HTML file
+* Html – HTML file
 
-  * Text – Text file
+* Text – Text file
 
-  * RichText – RichText file format (RTF)
+* RichText – RichText file format (RTF)
 
-  * Word – MS Word document file
+* Word – MS Word document file
 
-  * Excel – MS Excel document file
+* Excel – MS Excel document file
 
-  * PowerPoint – MS PowerPoint presentation file
+* PowerPoint – MS PowerPoint presentation file
 
-  * OpenDocumentWriter – OpenDocument file for Writer
+* OpenDocumentWriter – OpenDocument file for Writer
 
-  * OpenDocumentCalc – OpenDocument file for Calc
+* OpenDocumentCalc – OpenDocument file for Calc
 
-  * Data - One of multiple data format
+* Data - One of multiple data format
 
-  * Image - One of multiple image format
+* Image - One of multiple image format
 
-  * Xml – XML file
+* Xml – XML file
 
-  * Xsd – XSD file
+* Xsd – XSD file
 
-  * Csv – CSV file
+* Csv – CSV file
 
-  * Dbf – DBF file
+* Dbf – DBF file
 
-  * Sylk – SYLK file
+* Sylk – SYLK file
 
-  * Dif – DIF file
+* Dif – DIF file
 
-  * Json - Data in the JSON format
+* Json - Data in the JSON format
 
 
 These examples create an element of the **StiFileItem** type, load a file into it and receive the data as a table from it:

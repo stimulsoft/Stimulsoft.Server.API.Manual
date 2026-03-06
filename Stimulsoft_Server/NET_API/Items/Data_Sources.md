@@ -2,21 +2,21 @@
 
 For working with data sources, Stimulsoft Server has a special type of a **StiItem** – **StiDataSourceItem**, which has some specific features and capabilities. **StiDataSourceItem** is an element that provides a connection to a database and retrieves the necessary data for displaying in the report. There are several methods to connect a specific database:
 
-  * **SetFirebird** – connects to an existing DataSource adapter Firebird SQL;
+* **SetFirebird** – connects to an existing DataSource adapter Firebird SQL;
 
-  * **SetMsSQL** – connects to an existing DataSource adapter MS SQL Server;
+* **SetMsSQL** – connects to an existing DataSource adapter MS SQL Server;
 
-  * **SetMySQL** – connects to an existing DataSource adapter MySQL Server;
+* **SetMySQL** – connects to an existing DataSource adapter MySQL Server;
 
-  * **SetODBC** – connects to an existing DataSource adapter Open Database Connectivity (ODBC);
+* **SetODBC** – connects to an existing DataSource adapter Open Database Connectivity (ODBC);
 
-  * **SetOracle** – connects to an existing DataSource adapter Oracle Database;
+* **SetOracle** – connects to an existing DataSource adapter Oracle Database;
 
-  * **SetPostgreSQL** – connects to an existing DataSource adapter Postgre SQL;
+* **SetPostgreSQL** – connects to an existing DataSource adapter Postgre SQL;
 
-  * **SetSQLCE** – connects to an existing DataSource adapter Microsoft SQL Server Compact;
+* **SetSQLCE** – connects to an existing DataSource adapter Microsoft SQL Server Compact;
 
-  * **SetSQLite** – connects to an existing DataSource adapter SQLite DB;
+* **SetSQLite** – connects to an existing DataSource adapter SQLite DB;
 
 
 As an argument to any of these methods, you must specify the connection string in the format supported by the specified database. There is the **StiDataQueryItem** class for receiving data set from a database. It describes the SQL query for the selected database. Creating an instance of this class can be done by using the **StiDataSourceItem.NewQuery** method. It allows you to create an SQL query to retrieve a dataset from the database. The parameters of this method are the name of the query and the text of the query in a format supported by the selected database.
