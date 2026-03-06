@@ -1,0 +1,372 @@
+- title: Stimulsoft Server
+  url: "/Stimulsoft_Server/"
+  children:
+    - title: .NET API
+      url: "/Stimulsoft_Server/NET_API/"
+      children:
+        - title: Users
+          url: "/Stimulsoft_Server/NET_API/Users/"
+          children:
+            - title: Signing Up
+              url: "/Stimulsoft_Server/NET_API/Users/Signing_Up"
+            - title: Logging In
+              url: "/Stimulsoft_Server/NET_API/Users/Logging_In"
+            - title: Getting User Info
+              url: "/Stimulsoft_Server/NET_API/Users/Getting_User_Info"
+            - title: Getting List of Users
+              url: "/Stimulsoft_Server/NET_API/Users/Getting_List_of_Users"
+            - title: Changing User Info
+              url: "/Stimulsoft_Server/NET_API/Users/Changing_User_Info"
+            - title: Changing User Password
+              url: "/Stimulsoft_Server/NET_API/Users/Changing_User_Password"
+            - title: Creating New User
+              url: "/Stimulsoft_Server/NET_API/Users/Creating_New_User"
+            - title: Deleting User
+              url: "/Stimulsoft_Server/NET_API/Users/Deleting_User"
+            - title: Logging Out
+              url: "/Stimulsoft_Server/NET_API/Users/Logging_Out"
+        - title: Roles
+          url: "/Stimulsoft_Server/NET_API/Roles/"
+          children:
+            - title: Creating and Saving Roles
+              url: "/Stimulsoft_Server/NET_API/Roles/Creating_and_Saving_Roles"
+            - title: Getting Role Info
+              url: "/Stimulsoft_Server/NET_API/Roles/Getting_Role_Info"
+            - title: Getting List of Roles
+              url: "/Stimulsoft_Server/NET_API/Roles/Getting_List_of_Roles"
+            - title: Deleting Role
+              url: "/Stimulsoft_Server/NET_API/Roles/Deleting_Role"
+        - title: Workspaces
+          url: "/Stimulsoft_Server/NET_API/Workspaces/"
+          children:
+            - title: Creating and Saving
+              url: "/Stimulsoft_Server/NET_API/Workspaces/Creating_and_Saving"
+            - title: Getting Workspace Info
+              url: "/Stimulsoft_Server/NET_API/Workspaces/Getting_Workspace_Info"
+            - title: Getting List of Workspaces
+              url: "/Stimulsoft_Server/NET_API/Workspaces/Getting_List_of_Workspaces"
+            - title: Deleting Workspace
+              url: "/Stimulsoft_Server/NET_API/Workspaces/Deleting_Workspace"
+        - title: Items
+          url: "/Stimulsoft_Server/NET_API/Items/"
+          children:
+            - title: Creating and Saving Items
+              url: "/Stimulsoft_Server/NET_API/Items/Creating_and_Saving_Items"
+            - title: Sharing Items
+              url: "/Stimulsoft_Server/NET_API/Items/Sharing_Items"
+            - title: Getting Item
+              url: "/Stimulsoft_Server/NET_API/Items/Getting_Item"
+            - title: Getting List of Items
+              url: "/Stimulsoft_Server/NET_API/Items/Getting_List_of_Items"
+            - title: Deleting Item
+              url: "/Stimulsoft_Server/NET_API/Items/Deleting_Item"
+            - title: Resource Item
+              url: "/Stimulsoft_Server/NET_API/Items/Resource_Item"
+            - title: Attaching Items to Reports and Files
+              url: "/Stimulsoft_Server/NET_API/Items/Attaching_Items_to_Reports_and_Files"
+            - title: Running Report
+              url: "/Stimulsoft_Server/NET_API/Items/Running_Report"
+            - title: Exporting Report Snapshot
+              url: "/Stimulsoft_Server/NET_API/Items/Exporting_Report_Snapshot"
+            - title: Scheduling Actions
+              url: "/Stimulsoft_Server/NET_API/Items/Scheduling_Actions"
+            - title: Scheduling Frequency
+              url: "/Stimulsoft_Server/NET_API/Items/Scheduling_Frequency"
+            - title: Data Sources
+              url: "/Stimulsoft_Server/NET_API/Items/Data_Sources"
+            - title: File
+              url: "/Stimulsoft_Server/NET_API/Items/File"
+    - title: REST API
+      url: "/Stimulsoft_Server/REST_API/"
+      children:
+        - title: Object Model
+          url: "/Stimulsoft_Server/REST_API/Object_Model"
+        - title: Sign Up
+          url: "/Stimulsoft_Server/REST_API/Sign_Up"
+        - title: Login
+          url: "/Stimulsoft_Server/REST_API/Login"
+        - title: Logout
+          url: "/Stimulsoft_Server/REST_API/Logout"
+        - title: Users
+          url: "/Stimulsoft_Server/REST_API/Users/"
+          children:
+            - title: GET List
+              url: "/Stimulsoft_Server/REST_API/Users/GET_List"
+            - title: GET Info
+              url: "/Stimulsoft_Server/REST_API/Users/GET_Info"
+            - title: POST Create
+              url: "/Stimulsoft_Server/REST_API/Users/POST_Create"
+            - title: PUT Edit
+              url: "/Stimulsoft_Server/REST_API/Users/PUT_Edit"
+            - title: DELETE
+              url: "/Stimulsoft_Server/REST_API/Users/DELETE"
+            - title: Change password
+              url: "/Stimulsoft_Server/REST_API/Users/Change_password"
+            - title: Reset password
+              url: "/Stimulsoft_Server/REST_API/Users/Reset_password"
+        - title: Roles
+          url: "/Stimulsoft_Server/REST_API/Roles/"
+          children:
+            - title: GET List
+              url: "/Stimulsoft_Server/REST_API/Roles/GET_List"
+            - title: GET Info
+              url: "/Stimulsoft_Server/REST_API/Roles/GET_Info"
+            - title: POST Create
+              url: "/Stimulsoft_Server/REST_API/Roles/POST_Create"
+            - title: PUT Edit
+              url: "/Stimulsoft_Server/REST_API/Roles/PUT_Edit"
+            - title: DELETE
+              url: "/Stimulsoft_Server/REST_API/Roles/DELETE"
+        - title: Items
+          url: "/Stimulsoft_Server/REST_API/Items/"
+          children:
+            - title: GET List
+              url: "/Stimulsoft_Server/REST_API/Items/GET_List"
+            - title: GET Info
+              url: "/Stimulsoft_Server/REST_API/Items/GET_Info"
+            - title: POST Create
+              url: "/Stimulsoft_Server/REST_API/Items/POST_Create"
+            - title: PUT Edit
+              url: "/Stimulsoft_Server/REST_API/Items/PUT_Edit"
+            - title: DELETE
+              url: "/Stimulsoft_Server/REST_API/Items/DELETE"
+            - title: Share
+              url: "/Stimulsoft_Server/REST_API/Items/Share/"
+              children:
+                - title: GET Info
+                  url: "/Stimulsoft_Server/REST_API/Items/Share/GET_Info"
+                - title: PUT Edit
+                  url: "/Stimulsoft_Server/REST_API/Items/Share/PUT_Edit"
+                - title: DELETE Reset
+                  url: "/Stimulsoft_Server/REST_API/Items/Share/DELETE_Reset"
+                - title: Items Attach
+                  url: "/Stimulsoft_Server/REST_API/Items/Share/Items_Attach"
+                - title: Items Detach
+                  url: "/Stimulsoft_Server/REST_API/Items/Share/Items_Detach"
+        - title: Scheduler
+          url: "/Stimulsoft_Server/REST_API/Schedulers/"
+          children:
+            - title: GET List
+              url: "/Stimulsoft_Server/REST_API/Schedulers/GET_List"
+            - title: GET Info
+              url: "/Stimulsoft_Server/REST_API/Schedulers/GET_Info"
+            - title: POST Create
+              url: "/Stimulsoft_Server/REST_API/Schedulers/POST_Create"
+            - title: PUT Edit
+              url: "/Stimulsoft_Server/REST_API/Schedulers/PUT_Edit"
+            - title: DELETE
+              url: "/Stimulsoft_Server/REST_API/Schedulers/DELETE"
+            - title: GET_Info (Status)
+              url: "/Stimulsoft_Server/REST_API/Schedulers/GET_Info_Status"
+            - title: PUT Edit (Status)
+              url: "/Stimulsoft_Server/REST_API/Schedulers/PUT_Edit_Status"
+            - title: Run
+              url: "/Stimulsoft_Server/REST_API/Schedulers/Run"
+        - title: Files
+          url: "/Stimulsoft_Server/REST_API/Files/"
+          children:
+            - title: GET List
+              url: "/Stimulsoft_Server/REST_API/Files/GET_List"
+            - title: GET Download
+              url: "/Stimulsoft_Server/REST_API/Files/GET_Download"
+            - title: POST Create
+              url: "/Stimulsoft_Server/REST_API/Files/POST_Create"
+            - title: PUT Append
+              url: "/Stimulsoft_Server/REST_API/Files/PUT_Append"
+            - title: DELETE
+              url: "/Stimulsoft_Server/REST_API/Files/DELETE"
+        - title: Report Template
+          url: "/Stimulsoft_Server/REST_API/Report_Template/"
+          children:
+            - title: GET List
+              url: "/Stimulsoft_Server/REST_API/Report_Template/GET_List"
+            - title: GET Info
+              url: "/Stimulsoft_Server/REST_API/Report_Template/GET_Info"
+            - title: POST Create
+              url: "/Stimulsoft_Server/REST_API/Report_Template/POST_Create"
+            - title: DELETE
+              url: "/Stimulsoft_Server/REST_API/Report_Template/DELETE"
+            - title: Run
+              url: "/Stimulsoft_Server/REST_API/Report_Template/Run"
+            - title: POST Duplicate
+              url: "/Stimulsoft_Cloud/REST_API/Report_Template/POST_Duplicate"
+        - title: Report Snapshot
+          url: "/Stimulsoft_Server/REST_API/Report_Snapshot/"
+          children:
+            - title: GET List
+              url: "/Stimulsoft_Server/REST_API/Report_Snapshot/GET_List"
+            - title: GET Info
+              url: "/Stimulsoft_Server/REST_API/Report_Snapshot/GET_Info"
+            - title: POST Create
+              url: "/Stimulsoft_Server/REST_API/Report_Snapshot/POST_Create"
+            - title: DELETE
+              url: "/Stimulsoft_Server/REST_API/Report_Snapshot/DELETE"
+            - title: Export
+              url: "/Stimulsoft_Server/REST_API/Report_Snapshot/Export"
+        - title: Export
+          url: "/Stimulsoft_Server/REST_API/Export/"
+          children:
+            - title: PDF
+              url: "/Stimulsoft_Server/REST_API/Export/PDF"
+            - title: XPS
+              url: "/Stimulsoft_Server/REST_API/Export/XPS"
+            - title: Power Point
+              url: "/Stimulsoft_Server/REST_API/Export/Power_Point"
+            - title: HTML
+              url: "/Stimulsoft_Server/REST_API/Export/HTML"
+            - title: Text
+              url: "/Stimulsoft_Server/REST_API/Export/Text"
+            - title: Rich Text
+              url: "/Stimulsoft_Server/REST_API/Export/RichText"
+            - title: Word
+              url: "/Stimulsoft_Server/REST_API/Export/Word"
+            - title: Open Document Writer
+              url: "/Stimulsoft_Server/REST_API/Export/OpenDocumentWriter"
+            - title: Excel
+              url: "/Stimulsoft_Server/REST_API/Export/Excel"
+            - title: Open Document Calc
+              url: "/Stimulsoft_Server/REST_API/Export/OpenDocumentCalc"
+            - title: Data
+              url: "/Stimulsoft_Server/REST_API/Export/Data"
+            - title: Image
+              url: "/Stimulsoft_Server/REST_API/Export/Image"
+            - title: Download
+              url: "/Stimulsoft_Server/REST_API/Export/Download"
+            - title: Track Task Status
+              url: "/Stimulsoft_Server/REST_API/Export/Track_Task_Status"
+- title: Stimulsoft Cloud
+  url: "/Stimulsoft_Cloud/"
+  children:
+    - title: .NET API
+      url: "/Stimulsoft_Cloud/API/"
+      children:
+        - title: Users
+          url: "/Stimulsoft_Cloud/API/Users/"
+          children:
+            - title: Signing Up
+              url: "/Stimulsoft_Cloud/API/Users/Signing_Up"
+            - title: Logging In
+              url: "/Stimulsoft_Cloud/API/Users/Logging_In"
+            - title: Getting User Info
+              url: "/Stimulsoft_Cloud/API/Users/Getting_User_Info"
+            - title: Getting List of Users
+              url: "/Stimulsoft_Cloud/API/Users/Getting_List_of_Users"
+            - title: Changing User Info
+              url: "/Stimulsoft_Cloud/API/Users/Changing_User_Info"
+            - title: Changing User Password
+              url: "/Stimulsoft_Cloud/API/Users/Changing_User_Password"
+            - title: Creating New User
+              url: "/Stimulsoft_Cloud/API/Users/Creating_New_User"
+            - title: Deleting User
+              url: "/Stimulsoft_Cloud/API/Users/Deleting_User"
+            - title: Logging Out
+              url: "/Stimulsoft_Cloud/API/Users/Logging_Out"
+        - title: Items
+          url: "/Stimulsoft_Cloud/API/Items/"
+          children:
+            - title: Creating and Saving Items
+              url: "/Stimulsoft_Cloud/API/Items/Creating_and_Saving_Items"
+            - title: Sharing Items
+              url: "/Stimulsoft_Cloud/API/Items/Sharing_Items"
+            - title: Getting Item
+              url: "/Stimulsoft_Cloud/API/Items/Getting_Item"
+            - title: Getting List of Items
+              url: "/Stimulsoft_Cloud/API/Items/Getting_List_of_Items"
+            - title: Deleting Item
+              url: "/Stimulsoft_Cloud/API/Items/Deleting_Item"
+            - title: Resource Item
+              url: "/Stimulsoft_Cloud/API/Items/Resource_Item"
+            - title: Running Report
+              url: "/Stimulsoft_Cloud/API/Items/Running_Report"
+    - title: REST API
+      url: "/Stimulsoft_Cloud/REST_API/"
+      children:
+        - title: Object Model
+          url: "/Stimulsoft_Cloud/REST_API/Object_Model"
+        - title: Sign Up
+          url: "/Stimulsoft_Cloud/REST_API/SignUp"
+        - title: Login
+          url: "/Stimulsoft_Cloud/REST_API/Login"
+        - title: Logout
+          url: "/Stimulsoft_Cloud/REST_API/Logout"
+        - title: Users
+          url: "/Stimulsoft_Cloud/REST_API/Users/"
+          children:
+            - title: GET List
+              url: "/Stimulsoft_Cloud/REST_API/Users/Get_List"
+            - title: GET Info
+              url: "/Stimulsoft_Cloud/REST_API/Users/Get_Info"
+            - title: POST Create
+              url: "/Stimulsoft_Cloud/REST_API/Users/Post_Create"
+            - title: PUT Edit
+              url: "/Stimulsoft_Cloud/REST_API/Users/Put_Edit"
+            - title: DELETE
+              url: "/Stimulsoft_Cloud/REST_API/Users/Delete"
+            - title: Change password
+              url: "/Stimulsoft_Cloud/REST_API/Users/Change_password"
+            - title: Reset password
+              url: "/Stimulsoft_Cloud/REST_API/Users/Reset_password"
+        - title: Items
+          url: "/Stimulsoft_Cloud/REST_API/Items/"
+          children:
+            - title: GET List
+              url: "/Stimulsoft_Cloud/REST_API/Items/Get_List"
+            - title: GET Info
+              url: "/Stimulsoft_Cloud/REST_API/Items/GET_Info"
+            - title: POST Create
+              url: "/Stimulsoft_Cloud/REST_API/Items/POST_Create"
+            - title: PUT Edit
+              url: "/Stimulsoft_Cloud/REST_API/Items/PUT_Edit"
+            - title: DELETE
+              url: "/Stimulsoft_Cloud/REST_API/Items/DELETE"
+            - title: Share
+              url: "/Stimulsoft_Cloud/REST_API/Items/Share/"
+              children:
+                - title: GET Info
+                  url: "/Stimulsoft_Cloud/REST_API/Items/Share/GET_Info"
+                - title: PUT Edit
+                  url: "/Stimulsoft_Cloud/REST_API/Items/Share/PUT_Edit"
+                - title: DELETE Reset
+                  url: "/Stimulsoft_Cloud/REST_API/Items/Share/DELETE_Reset"
+        - title: Report Template
+          url: "/Stimulsoft_Cloud/REST_API/Report_Template/"
+          children:
+            - title: GET List
+              url: "/Stimulsoft_Cloud/REST_API/Report_Template/GET_List"
+            - title: GET Info
+              url: "/Stimulsoft_Cloud/REST_API/Report_Template/GET_Info"
+            - title: POST Create
+              url: "/Stimulsoft_Cloud/REST_API/Report_Template/POST_Create"
+            - title: DELETE
+              url: "/Stimulsoft_Cloud/REST_API/Report_Template/DELETE"
+        - title: Export
+          url: "/Stimulsoft_Cloud/REST_API/Export/"
+          children:
+            - title: PDF
+              url: "/Stimulsoft_Cloud/REST_API/Export/PDF"
+            - title: XPS
+              url: "/Stimulsoft_Cloud/REST_API/Export/XPS"
+            - title: Power Point
+              url: "/Stimulsoft_Cloud/REST_API/Export/Power_Point"
+            - title: HTML
+              url: "/Stimulsoft_Cloud/REST_API/Export/HTML"
+            - title: Text
+              url: "/Stimulsoft_Cloud/REST_API/Export/Text"
+            - title: Rich Text
+              url: "/Stimulsoft_Cloud/REST_API/Export/RichText"
+            - title: Word
+              url: "/Stimulsoft_Cloud/REST_API/Export/Word"
+            - title: Open Document Writer
+              url: "/Stimulsoft_Cloud/REST_API/Export/OpenDocumentWriter"
+            - title: Excel
+              url: "/Stimulsoft_Cloud/REST_API/Export/Excel"
+            - title: Open Document Calc
+              url: "/Stimulsoft_Cloud/REST_API/Export/OpenDocumentCalc"
+            - title: Data
+              url: "/Stimulsoft_Cloud/REST_API/Export/Data"
+            - title: Image
+              url: "/Stimulsoft_Cloud/REST_API/Export/Image"
+            - title: Download
+              url: "/Stimulsoft_Cloud/REST_API/Export/Download"
+- title: Extra_Text
+  url: "/Extra_Text/"
