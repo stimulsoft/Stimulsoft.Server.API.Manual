@@ -39,19 +39,19 @@ POST
 
 [Creating a new user](Users/POST_Create.md)
 
-/1/users/<UserId>
+/1/users/&lt;UserId&gt;
 
 GET
 
 [Getting information about the user <UserId>](Users/GET_Info.md)
 
-/1/users/<UserId>
+/1/users/&lt;UserId&gt;
 
 PUT
 
 [Changing user information <UserId>](Users/PUT_Edit.md)
 
-/1/users/<UserId>
+/1/users/&lt;UserId&gt;
 
 DELETE
 
@@ -69,7 +69,7 @@ PUT
 
 [Changing the current user information](Users/PUT_Edit.md)
 
-/1/users/<UserId>/changepassword
+/1/users/&lt;UserId&gt;/changepassword
 
 PUT
 
@@ -81,7 +81,7 @@ PUT
 
 [Changing the password of the current user](Users/Change_password.md)
 
-/1/users/<UserId>/resetpassword
+/1/users/&lt;UserId&gt;/resetpassword
 
 PUT
 
@@ -105,7 +105,7 @@ GET
 
 [Getting a list of roles](Roles/GET_List.md)
 
-/1/roles/<RoleId>
+/1/roles/&lt;RoleId&gt;
 
 GET
 
@@ -117,13 +117,13 @@ POST
 
 [Creating a new role](Roles/POST_Create.md)
 
-/1/roles/<RoleId>
+/1/roles/&lt;RoleId&gt;
 
 PUT
 
 [Changing information about the role <RoleId>](Roles/PUT_Edit.md)
 
-/1/roles/<RoleId>
+/1/roles/&lt;RoleId&gt;
 
 DELETE
 
@@ -135,7 +135,7 @@ GET
 
 [Getting a list of items](Items/GET_List.md)
 
-/1/items/<ItemId>
+/1/items/&lt;ItemId&gt;
 
 GET
 
@@ -147,31 +147,31 @@ POST
 
 [Create a new item](Items/POST_Create.md)
 
-/1/items/<ItemId>
+/1/items/&lt;ItemId&gt;
 
 PUT
 
 [Changing information about the element <ItemId>](Items/PUT_Edit.md)
 
-/1/items/<ItemId>
+/1/items/&lt;ItemId&gt;
 
 DELETE
 
 [Deleting an element <ItemId>](Items/DELETE.md)
 
-/1/items/<ItemId>/share
+/1/items/&lt;ItemId&gt;/share
 
 GET
 
 [Getting information about public access to the element <ItemId>](Items/Share/GET_Info.md)
 
-/1/items/<ItemId>/share
+/1/items/&lt;ItemId&gt;/share
 
 PUT
 
 [Changing data on public access to the element <ItemId>](Items/Share/PUT_Edit.md)
 
-/1/items/<ItemId>/share
+/1/items/&lt;ItemId&gt;/share
 
 DELETE
 
@@ -183,7 +183,7 @@ GET
 
 [Getting a list of schedulers](Schedulers/GET_List.md)
 
-/1/schedulers/<SchedulerId>
+/1/schedulers/&lt;SchedulerId&gt;
 
 GET
 
@@ -195,31 +195,31 @@ POST
 
 [Creating a new scheduler](Schedulers/POST_Create.md)
 
-/1/schedulers/<SchedulerId>
+/1/schedulers/&lt;SchedulerId&gt;
 
 PUT
 
 [Changing information about the scheduler <SchedulerId>](Schedulers/PUT_Edit.md)
 
-/1/schedulers/<SchedulerId>
+/1/schedulers/&lt;SchedulerId&gt;
 
 DELETE
 
 [Removal of scheduler <SchedulerId>](Schedulers/DELETE.md)
 
-/1/schedulers/<SchedulerId>/status
+/1/schedulers/&lt;SchedulerId&gt;/status
 
 GET
 
 [Getting information about the state of the scheduler <SchedulerId>](Schedulers/GET_Info_Status.md)
 
-/1/schedulers/<SchedulerId>/status
+/1/schedulers/&lt;SchedulerId&gt;/status
 
 PUT
 
 [Setting state of scheduler <SchedulerId>](Schedulers/PUT_Edit_Status.md)
 
-/1/schedulers/<SchedulerId>/run
+/1/schedulers/&lt;SchedulerId&gt;/run
 
 PUT
 
@@ -231,7 +231,7 @@ GET
 
 [Getting a list of files](Files/GET_List.md)
 
-/1/files/<FileId>/
+/1/files/&lt;FileId&gt;/
 
 GET
 
@@ -243,13 +243,13 @@ POST
 
 [Creating a new file](Files/POST_Create.md)
 
-/1/files/<FileId>/
+/1/files/&lt;FileId&gt;/
 
 PUT
 
 [Appending a new chunk to file <FileId>](Files/PUT_Append.md)
 
-/1/files/<FileId>/
+/1/files/&lt;FileId&gt;/
 
 DELETE
 
@@ -261,7 +261,7 @@ GET
 
 [Getting a list of report templates](Report_Template/GET_List.md)
 
-/1/reporttemplates/<ReportTemplateId>/
+/1/reporttemplates/&lt;ReportTemplateId&gt;/
 
 GET
 
@@ -273,19 +273,19 @@ POST
 
 [Creating a new report template](Report_Template/POST_Create.md)
 
-/1/reporttemplates/<ReportTemplateId>/
+/1/reporttemplates/&lt;ReportTemplateId&gt;/
 
 DELETE
 
 [Removing a report template <ReportTemplateId>](Report_Template/DELETE.md)
 
-/1/reporttemplates/<ReportTemplateId>/run
+/1/reporttemplates/&lt;ReportTemplateId&gt;/run
 
 PUT
 
 [Build the report template and save result to another item](Report_Template/Run.md)
 
-/1/reporttemplates/<ReportTemplateId>/duplicate
+/1/reporttemplates/&lt;ReportTemplateId&gt;/duplicate
 
 POST
 
@@ -297,7 +297,7 @@ GET
 
 [Getting a list of report snapshots](Report_Snapshot/GET_List.md)
 
-/1/reportsnapshots/<ReportSnapshotId>/
+/1/reportsnapshots/&lt;ReportSnapshotId&gt;/
 
 GET
 
@@ -309,13 +309,13 @@ POST
 
 [Creating a new report snapshot](Report_Snapshot/POST_Create.md)
 
-/1/reportsnapshots/<ReportSnapshotId>/
+/1/reportsnapshots/&lt;ReportSnapshotId&gt;/
 
 DELETE
 
 [Removing a report snapshot <ReportSnapshotId>](Report_Snapshot/DELETE.md)
 
-/1/reportsnapshots/<ReportSnapshotId>/export
+/1/reportsnapshots/&lt;ReportSnapshotId&gt;/export
 
 PUT
 
