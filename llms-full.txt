@@ -4973,8 +4973,36 @@ Ident parameter may have values - '**Single**', '**Range**' and '**List**'.
           "Name": "param",
           "Type": "string",
           "Value": "testvalue"
-          }
-          ],
+          },
+          {
+          "Ident": "Range",
+          "Name": "rangeParamName",
+          "FromValue": "1",
+          "ToValue": "2",
+          "RangeType": "StringRange",
+          "FromType": "string",
+          "ToType": "string"
+          },
+          {
+          "Ident": "List",
+          "Name": "listParamName",
+          "ListType": "StringList",
+          "Values": [{
+          "Ident": "Single",
+          "Value": "11",
+          "Type": "string"
+          },
+          {
+          "Ident": "Single",
+          "Value": "12",
+          "Type": "string"
+          },
+          {
+          "Ident": "Single",
+          "Value": "13",
+          "Type": "string"
+          }]
+          }],
           "ReportTemplateItemKey": "55617f45d7c641dc9b806f6859c995d1",
           "UserKey": "f215f398a01740638ef02e8e9437b40c",
           "TaskKey": "806019df4aec44e1aeeeb09a169e20f7",
