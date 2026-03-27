@@ -36,22 +36,24 @@ Each of these permissions have one of the values:
 Permission example:
 
 
-**Sample JSON response
+**Sample JSON response**
 
-          ...
-          "Permissions": {
-          "ItemCalendars": "CreateDeleteModifyView",
-          "ItemCloudStorages": "CreateDeleteModifyView",
-          "ItemContactLists": "CreateDeleteModifyView",
-          "ItemDashboards": "All",
-          "ItemDataSources": "CreateDeleteModifyView",
-          "ItemFiles": "CreateDeleteModifyView",
-          "ItemFolders": "CreateDeleteModifyView",
-          "ItemReportSnapshots": "All",
-          "ItemReportTemplates": "All",
-          "ItemSchedulers": "All"
-          }
-          ...**
+```
+...
+"Permissions": {
+    "ItemCalendars": "CreateDeleteModifyView",
+    "ItemCloudStorages": "CreateDeleteModifyView",
+    "ItemContactLists": "CreateDeleteModifyView",
+    "ItemDashboards": "All",
+    "ItemDataSources": "CreateDeleteModifyView",
+    "ItemFiles": "CreateDeleteModifyView",
+    "ItemFolders": "CreateDeleteModifyView",
+    "ItemReportSnapshots": "All",
+    "ItemReportTemplates": "All",
+    "ItemSchedulers": "All"
+}
+...
+```
 
 To get the list of roles, data modification, and to create new roles in the current workspace and delete existing roles, use the command Roles with different methods. The default configuration of the system, there are four roles (fields marked with "IsSystem": true) - **Supervisor**, **Administrator**, **Manager** and **User** (a role name the same as the key). These roles can't be removed or changed. It is possible to modify only the roles created by the user.
 

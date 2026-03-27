@@ -2728,22 +2728,24 @@ Each of these permissions have one of the values:
 Permission example:
 
 
-**Sample JSON response
+**Sample JSON response**
 
-          ...
-          "Permissions": {
-          "ItemCalendars": "CreateDeleteModifyView",
-          "ItemCloudStorages": "CreateDeleteModifyView",
-          "ItemContactLists": "CreateDeleteModifyView",
-          "ItemDashboards": "All",
-          "ItemDataSources": "CreateDeleteModifyView",
-          "ItemFiles": "CreateDeleteModifyView",
-          "ItemFolders": "CreateDeleteModifyView",
-          "ItemReportSnapshots": "All",
-          "ItemReportTemplates": "All",
-          "ItemSchedulers": "All"
-          }
-          ...**
+```
+...
+"Permissions": {
+    "ItemCalendars": "CreateDeleteModifyView",
+    "ItemCloudStorages": "CreateDeleteModifyView",
+    "ItemContactLists": "CreateDeleteModifyView",
+    "ItemDashboards": "All",
+    "ItemDataSources": "CreateDeleteModifyView",
+    "ItemFiles": "CreateDeleteModifyView",
+    "ItemFolders": "CreateDeleteModifyView",
+    "ItemReportSnapshots": "All",
+    "ItemReportTemplates": "All",
+    "ItemSchedulers": "All"
+}
+...
+```
 
 To get the list of roles, data modification, and to create new roles in the current workspace and delete existing roles, use the command Roles with different methods. The default configuration of the system, there are four roles (fields marked with "IsSystem": true) - **Supervisor**, **Administrator**, **Manager** and **User** (a role name the same as the key). These roles can't be removed or changed. It is possible to modify only the roles created by the user.
 
@@ -2792,94 +2794,96 @@ curl -X GET -H "x-sti-SessionKey: ea8cc765d54241e18347a043e187ada3" http://repor
 The JSON object containing the collection ResultUsers, which is a list of the roles of the current workspace. The success of the command execution is checked by the content of the field ResultSuccess.
 
 
-**Sample JSON response
+**Sample JSON response**
 
-          ...
-          {
-            "Ident": "RoleFetchAll",
-            "ResultRoles": [
-              {
-                "Name": "Supervisor",
-                "Created": "\/Date(1425645969540)\/",
-                "Modified": "\/Date(1425645969540)\/",
-                "Permissions": {
-                  "ItemCalendars": "CreateDeleteModifyView",
-                  "ItemCloudStorages": "CreateDeleteModifyView",
-                  "ItemContactLists": "CreateDeleteModifyView",
-                  "ItemDashboards": "All",
-                  "ItemDataSources": "CreateDeleteModifyView",
-                  "ItemFiles": "CreateDeleteModifyView",
-                  "ItemFolders": "CreateDeleteModifyView",
-                  "ItemReportSnapshots": "All",
-                  "ItemReportTemplates": "All",
-                  "ItemSchedulers": "All"
-                },
-                "IsSupervisor": true,
-                "IsAdministrator": true,
-                "IsSystem": true,
-                "Key": "Supervisor"
-              },
-              {
-                "Name": "Administrator",
-                "Created": "\/Date(1425645969540)\/",
-                "Modified": "\/Date(1425645969540)\/",
-                "Permissions": {
-                  "ItemCalendars": "CreateDeleteModifyView",
-                  "ItemCloudStorages": "CreateDeleteModifyView",
-                  "ItemContactLists": "CreateDeleteModifyView",
-                  "ItemDashboards": "All",
-                  "ItemDataSources": "CreateDeleteModifyView",
-                  "ItemFiles": "CreateDeleteModifyView",
-                  "ItemFolders": "CreateDeleteModifyView",
-                  "ItemReportSnapshots": "All",
-                  "ItemReportTemplates": "All",
-                  "ItemSchedulers": "All"
-                },
-                "IsAdministrator": true,
-                "IsSystem": true,
-                "Key": "Administrator"
-              },
-              {
-                "Name": "Manager",
-                "Created": "\/Date(1425645969540)\/",
-                "Modified": "\/Date(1425645969540)\/",
-                "Permissions": {
-                  "ItemCalendars": "CreateDeleteModifyView",
-                  "ItemCloudStorages": "CreateDeleteModifyView",
-                  "ItemContactLists": "CreateDeleteModifyView",
-                  "ItemDashboards": "All",
-                  "ItemDataSources": "CreateDeleteModifyView",
-                  "ItemFiles": "CreateDeleteModifyView",
-                  "ItemFolders": "CreateDeleteModifyView",
-                  "ItemReportSnapshots": "All",
-                  "ItemReportTemplates": "All",
-                  "ItemSchedulers": "View"
-                },
-                "IsSystem": true,
-                "Key": "Manager"
-              },
-              {
-                "Name": "User",
-                "Created": "\/Date(1425645969540)\/",
-                "Modified": "\/Date(1425645969540)\/",
-                "Permissions": {
-                  "ItemCalendars": "View",
-                  "ItemCloudStorages": "View",
-                  "ItemContactLists": "View",
-                  "ItemDashboards": "RunView",
-                  "ItemDataSources": "View",
-                  "ItemFiles": "View",
-                  "ItemFolders": "View",
-                  "ItemReportSnapshots": "RunView",
-                  "ItemReportTemplates": "RunView"
-                },
-                "IsSystem": true,
-                "Key": "User"
-              }
-            ],
-            "ResultSuccess": true
-          }
-          ...**
+```
+...
+{
+  "Ident": "RoleFetchAll",
+  "ResultRoles": [
+    {
+      "Name": "Supervisor",
+      "Created": "\/Date(1425645969540)\/",
+      "Modified": "\/Date(1425645969540)\/",
+      "Permissions": {
+        "ItemCalendars": "CreateDeleteModifyView",
+        "ItemCloudStorages": "CreateDeleteModifyView",
+        "ItemContactLists": "CreateDeleteModifyView",
+        "ItemDashboards": "All",
+        "ItemDataSources": "CreateDeleteModifyView",
+        "ItemFiles": "CreateDeleteModifyView",
+        "ItemFolders": "CreateDeleteModifyView",
+        "ItemReportSnapshots": "All",
+        "ItemReportTemplates": "All",
+        "ItemSchedulers": "All"
+      },
+      "IsSupervisor": true,
+      "IsAdministrator": true,
+      "IsSystem": true,
+      "Key": "Supervisor"
+    },
+    {
+      "Name": "Administrator",
+      "Created": "\/Date(1425645969540)\/",
+      "Modified": "\/Date(1425645969540)\/",
+      "Permissions": {
+        "ItemCalendars": "CreateDeleteModifyView",
+        "ItemCloudStorages": "CreateDeleteModifyView",
+        "ItemContactLists": "CreateDeleteModifyView",
+        "ItemDashboards": "All",
+        "ItemDataSources": "CreateDeleteModifyView",
+        "ItemFiles": "CreateDeleteModifyView",
+        "ItemFolders": "CreateDeleteModifyView",
+        "ItemReportSnapshots": "All",
+        "ItemReportTemplates": "All",
+        "ItemSchedulers": "All"
+      },
+      "IsAdministrator": true,
+      "IsSystem": true,
+      "Key": "Administrator"
+    },
+    {
+      "Name": "Manager",
+      "Created": "\/Date(1425645969540)\/",
+      "Modified": "\/Date(1425645969540)\/",
+      "Permissions": {
+        "ItemCalendars": "CreateDeleteModifyView",
+        "ItemCloudStorages": "CreateDeleteModifyView",
+        "ItemContactLists": "CreateDeleteModifyView",
+        "ItemDashboards": "All",
+        "ItemDataSources": "CreateDeleteModifyView",
+        "ItemFiles": "CreateDeleteModifyView",
+        "ItemFolders": "CreateDeleteModifyView",
+        "ItemReportSnapshots": "All",
+        "ItemReportTemplates": "All",
+        "ItemSchedulers": "View"
+      },
+      "IsSystem": true,
+      "Key": "Manager"
+    },
+    {
+      "Name": "User",
+      "Created": "\/Date(1425645969540)\/",
+      "Modified": "\/Date(1425645969540)\/",
+      "Permissions": {
+        "ItemCalendars": "View",
+        "ItemCloudStorages": "View",
+        "ItemContactLists": "View",
+        "ItemDashboards": "RunView",
+        "ItemDataSources": "View",
+        "ItemFiles": "View",
+        "ItemFolders": "View",
+        "ItemReportSnapshots": "RunView",
+        "ItemReportTemplates": "RunView"
+      },
+      "IsSystem": true,
+      "Key": "User"
+    }
+  ],
+  "ResultSuccess": true
+}
+...
+```
 
 ---
 
@@ -4962,55 +4966,57 @@ In the POST data you must specify the JSON object that describes the parameters 
 Ident parameter may have values - '**Single**', '**Range**' and '**List**'.
 
 
-**Sample JSON response
+**Sample JSON response**
 
-          ...
-          {
-          "Ident": "ReportRun",
-          "Parameters": [
-          {
-          "Ident": "Single",
-          "Name": "param",
-          "Type": "string",
-          "Value": "testvalue"
-          },
-          {
-          "Ident": "Range",
-          "Name": "rangeParamName",
-          "FromValue": "1",
-          "ToValue": "2",
-          "RangeType": "StringRange",
-          "FromType": "string",
-          "ToType": "string"
-          },
-          {
-          "Ident": "List",
-          "Name": "listParamName",
-          "ListType": "StringList",
-          "Values": [{
-          "Ident": "Single",
-          "Value": "11",
-          "Type": "string"
-          },
-          {
-          "Ident": "Single",
-          "Value": "12",
-          "Type": "string"
-          },
-          {
-          "Ident": "Single",
-          "Value": "13",
-          "Type": "string"
-          }]
-          }],
-          "ReportTemplateItemKey": "55617f45d7c641dc9b806f6859c995d1",
-          "UserKey": "f215f398a01740638ef02e8e9437b40c",
-          "TaskKey": "806019df4aec44e1aeeeb09a169e20f7",
-          "ResultTaskKey": "806019df4aec44e1aeeeb09a169e20f7",
-          "SessionKey": "8a8d4554fb564422a7232107a8ab29f3",
-          "ResultSuccess": true
-          }
-          ...**
+```
+...
+{
+    "Ident": "ReportRun",
+    "Parameters": [
+    {
+        "Ident": "Single",
+        "Name": "param",
+        "Type": "string",
+        "Value": "testvalue"
+    },
+    {
+        "Ident": "Range",
+        "Name": "rangeParamName",
+        "FromValue": "1",
+        "ToValue": "2",
+        "RangeType": "StringRange",
+        "FromType": "string",
+        "ToType": "string"
+    },
+    {
+        "Ident": "List",
+        "Name": "listParamName",
+        "ListType": "StringList",
+        "Values": [{
+            "Ident": "Single",
+            "Value": "11",
+            "Type": "string"
+        },
+        {
+            "Ident": "Single",
+            "Value": "12",
+            "Type": "string"
+        },
+        {
+            "Ident": "Single",
+            "Value": "13",
+            "Type": "string"
+        }]
+    }],
+    "ReportTemplateItemKey": "55617f45d7c641dc9b806f6859c995d1",
+    "UserKey": "f215f398a01740638ef02e8e9437b40c",
+    "TaskKey": "806019df4aec44e1aeeeb09a169e20f7",
+    "ResultTaskKey": "806019df4aec44e1aeeeb09a169e20f7",
+    "SessionKey": "8a8d4554fb564422a7232107a8ab29f3",
+    "ResultSuccess": true
+}
+...
+```
 
 ---
 
