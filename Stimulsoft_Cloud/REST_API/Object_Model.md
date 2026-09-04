@@ -20,7 +20,7 @@ The input data for each command are custom HTTP-headers prefixed with "x-sti-" a
 | x-sti-allowmovetorecyclebin | Allows deleting an item to the recycle bin, by default it is set to true |
 | x-sti-destinationitemkey | Allows indicates an item that will be stored data |
 
-Other information transmitted in the body of the request in the JSON format. Permitted to transfer the input parameters in the request body as a simple JSON-object with fields whose names match the custom headers, but lack the prefix “x-sti-“. Parameter names are not case sensitive, regardless of how they transfer (custom headers or POST-data). As the output data is used JSON-object for all commands. Even in the case of error or successful completion of an object returned, indicating success of query processing server.
+Other information transmitted in the body of the request in the JSON format. Permitted to transfer the input parameters in the request body as a simple JSON-object with fields whose names match the custom headers, but lack the prefix "x-sti-". Parameter names are not case sensitive, regardless of how they transfer (custom headers or POST-data). As the output data is used JSON-object for all commands. Even in the case of error or successful completion of an object returned, indicating success of query processing server.
 
 Error example:
 

@@ -7,27 +7,27 @@ Removing an element from the current workspace. However, the use of this command
 
 **Url Structure**:
 
-http://reports.stimulsoft.com/1/items/itemkey
+`http://reports.stimulsoft.com/1/items/itemkey`
 
 
 **Method**:
 
-DELETE
+`DELETE`
 
 
 **Parameters**:
 
-A custom header x-sti-SessionKey contains the session key of the current user. A custom header x-sti-AllowMoveToRecycleBin allows deleting an item to the recycle bin, by default it is set to true. To remove an item with referenced resources set x-sti-AllowMoveToRecycleBin to false. The itemkey parameter in the URI is the key of item and indicates the item whose data you want to delete.
+A custom header `x-sti-SessionKey` contains the session key of the current user. A custom header `x-sti-AllowMoveToRecycleBin` allows deleting an item to the recycle bin, by default it is set to true. To remove an item with referenced resources set `x-sti-AllowMoveToRecycleBin` to false. The itemkey parameter in the URI is the key of item and indicates the item whose data you want to delete.
 
 
 **CURL example**:
 
-curl -X DELETE -H "x-sti-SessionKey: ea8cc765d54241e18347a043e187ada3" -H "x-sti-AllowMoveToRecycleBin: false" http://reports.stimulsoft.com/1/items/ca3bfa74c8114b3a83fd08c04ab31f99
+`curl -X DELETE -H "x-sti-SessionKey: ea8cc765d54241e18347a043e187ada3" -H "x-sti-AllowMoveToRecycleBin: false" http://reports.stimulsoft.com/1/items/ca3bfa74c8114b3a83fd08c04ab31f99`
 
 
 **Returns**:
 
-The success of the command execution is checked by the content of the field ResultSuccess. ResultTaskKey field contains unique key of internal server tasks, created to remove the item.
+The success of the command execution is checked by the content of the field `ResultSuccess`. `ResultTaskKey` field contains unique key of internal server tasks, created to remove the item.
 
 
 **Sample JSON response**

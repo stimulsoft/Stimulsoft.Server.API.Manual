@@ -7,27 +7,27 @@ Getting information about the report templates in a workspace of the logged-in u
 
 **Url Structure**:
 
-http://reports.stimulsoft.com/1/reporttemplates/reporttemplatekey
+`http://reports.stimulsoft.com/1/reporttemplates/reporttemplatekey`
 
 
 **Method**:
 
-GET
+`GET`
 
 
 **Parameters**:
 
-A custom header x-sti-SessionKey contains the session key of the current user. The reporttemplatekey parameter in the URI is the key of the report templates and indicates the report templates whose data you want to get.
+A custom header `x-sti-SessionKey` contains the session key of the current user. The reporttemplatekey parameter in the URI is the key of the report templates and indicates the report templates whose data you want to get.
 
 
 **CURL example**:
 
-curl -X GET -H "x-sti-SessionKey: 1add6a4f1c5e481c80e964b613ee6089" http://reports.stimulsoft.com/1/reporttemplates/83a5f6d43351499fa9a2d40822f5772b
+`curl -X GET -H "x-sti-SessionKey: 1add6a4f1c5e481c80e964b613ee6089" http://reports.stimulsoft.com/1/reporttemplates/83a5f6d43351499fa9a2d40822f5772b`
 
 
 **Returns**:
 
-The JSON object containing the field ResultItem, which is the required report template of the current workspace. The success of the command execution is checked by the content of the field ResultSuccess.
+The JSON object containing the field `ResultItem`, which is the required report template of the current workspace. The success of the command execution is checked by the content of the field `ResultSuccess`.
 
 
 **Sample JSON response**

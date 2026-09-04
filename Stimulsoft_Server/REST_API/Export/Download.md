@@ -9,27 +9,27 @@ You can download any element. For this, you need to know its unique key. You can
 
 **Url Structure**:
 
-http://reports.stimulsoft.com/1/files/{ItemKey}
+`http://reports.stimulsoft.com/1/files/{ItemKey}`
 
 
 **Method**:
 
-GET
+`GET`
 
 
 **Parameters**:
 
-A custom header x-sti-SessionKey contains the session key of the current user.
+A custom header `x-sti-SessionKey` contains the session key of the current user.
 
 
 **CURL example**:
 
-curl -X GET -H "x-sti-SessionKey: 22ed00099bd24fffacf9d5ad2344f457" http://reports.stimulsoft.com/1/files/a8dde8679ecb43cbbba190786a2b44f3
+`curl -X GET -H "x-sti-SessionKey: 22ed00099bd24fffacf9d5ad2344f457" http://reports.stimulsoft.com/1/files/a8dde8679ecb43cbbba190786a2b44f3`
 
 
 **Returns**:
 
-The JSON object containing the collection ResultItems, which contains a list of items in the specified folder of the current workspace. The success of the command execution is checked by the content of the field ResultSuccess.
+The JSON object containing the collection `ResultItems`, which contains a list of items in the specified folder of the current workspace. The success of the command execution is checked by the content of the field `ResultSuccess`.
 
 
 **Sample JSON response**

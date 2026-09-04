@@ -7,27 +7,27 @@ Creating a new copy of the report template in a cloud of the logged-in user.
 
 **Url Structure**:
 
-https://cloud.stimulsoft.com/1/reporttemplates
+`https://cloud.stimulsoft.com/1/reporttemplates`
 
 
 **Method**:
 
-POST
+`POST`
 
 
 **Parameters**:
 
-A custom header x-sti-SessionKey contains the session key of the current user. The reporttemplatekey parameter in the URI is the key of report template and indicates the report template whose data you want to copy.
+A custom header `x-sti-SessionKey` contains the session key of the current user. The reporttemplatekey parameter in the URI is the key of report template and indicates the report template whose data you want to copy.
 
 
 **CURL example**:
 
-curl -X POST -H "x-sti-SessionKey: 3fd143cd876048a188a6a3d69da0f535" -d "" http://cloud.stimulsoft.com/1/reporttemplates/7e4e950c0eb54241995efe1b48fedb6e/duplicate
+`curl -X POST -H "x-sti-SessionKey: 3fd143cd876048a188a6a3d69da0f535" -d "" http://cloud.stimulsoft.com/1/reporttemplates/7e4e950c0eb54241995efe1b48fedb6e/duplicate`
 
 
 **Returns**:
 
-The JSON object containing the field ResultSuccess which indicates that the command is executed successfully.
+The JSON object containing the field `ResultSuccess` which indicates that the command is executed successfully.
 
 
 **Sample JSON response**

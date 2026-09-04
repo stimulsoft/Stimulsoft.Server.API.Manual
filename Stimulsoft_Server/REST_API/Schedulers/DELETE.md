@@ -7,27 +7,27 @@ Removing a scheduler from the current workspace. However, the use of this comman
 
 **Url Structure**:
 
-http://reports.stimulsoft.com/1/schedulers/schedulerkey
+`http://reports.stimulsoft.com/1/schedulers/schedulerkey`
 
 
 **Method**:
 
-DELETE
+`DELETE`
 
 
 **Parameters**:
 
-A custom header x-sti-SessionKey contains the session key of the current user. A custom header x-sti-AllowMoveToRecycleBin allows deleting an item to the recycle bin, by default it is set to true. To remove an item with referenced resources set x-sti-AllowMoveToRecycleBin to false. The schedulerkey parameter in the URI is the key of scheduler and indicates the scheduler whose data you want to delete.
+A custom header `x-sti-SessionKey` contains the session key of the current user. A custom header `x-sti-AllowMoveToRecycleBin` allows deleting an item to the recycle bin, by default it is set to `true`. To remove an item with referenced resources set `x-sti-AllowMoveToRecycleBin` to `false`. The `schedulerkey` parameter in the URI is the key of scheduler and indicates the scheduler whose data you want to delete.
 
 
 **CURL example**:
 
-curl -X DELETE -H "x-sti-SessionKey: ed46247f12fc44cf92f284ff5c8ffc12" -H "x-sti-AllowMoveToRecycleBin: false" http://reports.stimulsoft.com/1/schedulers/92046b1ae6e049a68791311f4a4256ce
+`curl -X DELETE -H "x-sti-SessionKey: ed46247f12fc44cf92f284ff5c8ffc12" -H "x-sti-AllowMoveToRecycleBin: false" http://reports.stimulsoft.com/1/schedulers/92046b1ae6e049a68791311f4a4256ce`
 
 
 **Returns**:
 
-The success of the command execution is checked by the content of the field ResultSuccess. ResultTaskKey field contains unique key of internal server tasks, created to remove the scheduler.
+The success of the command execution is checked by the content of the field `ResultSuccess`. `ResultTaskKey` field contains unique key of internal server tasks, created to remove the scheduler.
 
 
 **Sample JSON response**

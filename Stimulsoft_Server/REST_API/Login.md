@@ -7,27 +7,27 @@ Login with username and password.
 
 **Url Structure**:
 
-http://reports.stimulsoft.com/1/login
+`http://reports.stimulsoft.com/1/login`
 
 
 **Method**:
 
-GET
+`GET`
 
 
 **Parameters**:
 
-Two custom header: x-sti-UserName and x-sti-Password, containing the username and password, respectively.
+Two custom header: `x-sti-UserName` and `x-sti-Password`, containing the username and password, respectively.
 
 
 **CURL example**:
 
-curl -X GET -H "x-sti-UserName: a@a.com" -H "x-sti-Password: 111111" http://reports.stimulsoft.com/1/login
+`curl -X GET -H "x-sti-UserName: a@a.com" -H "x-sti-Password: 111111" http://reports.stimulsoft.com/1/login`
 
 
 **Returns**:
 
-The JSON object containing the field ResultSessionKey, which will be further used for communication with the server. The success of the command execution is checked by the content of the field ResultSuccess.
+The JSON object containing the field `ResultSessionKey`, which will be further used for communication with the server. The success of the command execution is checked by the content of the field `ResultSuccess`.
 
 
 **Sample JSON response**

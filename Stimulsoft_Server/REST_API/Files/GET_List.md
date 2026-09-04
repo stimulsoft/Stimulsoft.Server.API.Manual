@@ -7,27 +7,27 @@ Getting a list of files in a workspace of the logged-in user. The list is return
 
 **Url Structure**:
 
-http://reports.stimulsoft.com/1/files
+`http://reports.stimulsoft.com/1/files`
 
 
 **Method**:
 
-GET
+`GET`
 
 
 **Parameters**:
 
-A custom header x-sti-SessionKey contains the session key of the current user. Custom header x-sti-ItemKey used to identify the parent folder, which list of files needs to be retrieved. If this header is not present, it will get a list of files of the root folder.
+A custom header `x-sti-SessionKey` contains the session key of the current user. Custom header `x-sti-ItemKey` used to identify the parent folder, which list of files needs to be retrieved. If this header is not present, it will get a list of files of the root folder.
 
 
 **CURL example**:
 
-curl -X GET -H "x-sti-SessionKey: 2aa74b48f7c542b9a17cbcfa5d43122d" http://reports.stimulsoft.com/1/files
+`curl -X GET -H "x-sti-SessionKey: 2aa74b48f7c542b9a17cbcfa5d43122d" http://reports.stimulsoft.com/1/files`
 
 
 **Returns**:
 
-The JSON object containing the collection ResultItems, which contains a list of files in the specified folder of the current workspace. The success of the command execution is checked by the content of the field ResultSuccess.
+The JSON object containing the collection `ResultItems`, which contains a list of files in the specified folder of the current workspace. The success of the command execution is checked by the content of the field `ResultSuccess`.
 
 
 **Sample JSON response**

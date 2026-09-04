@@ -7,27 +7,27 @@ Getting a list of elements in a workspace of the logged-in user. The list is ret
 
 **Url Structure**:
 
-http://reports.stimulsoft.com/1/items
+`http://reports.stimulsoft.com/1/items`
 
 
 **Method**:
 
-GET
+`GET`
 
 
 **Parameters**:
 
-A custom header x-sti-SessionKey contains the session key of the current user. Custom header x-sti-ItemKey used to identify the parent folder, which list of elements needs to be retrieved. If this header is not present, it will get a list of elements of the root folder. To filter element types used header x-sti-FilterIdent. It may contain one of the values ​​in the table above Ident. If this header is absent, all elements from the requested collection will be returned. It is also possible to use the header x-sti-AllowDeleted, which is responsible for displaying the elements placed in the recycle bin (not removed completely).
+A custom header `x-sti-SessionKey` contains the session key of the current user. Custom header `x-sti-ItemKey` used to identify the parent folder, which list of elements needs to be retrieved. If this header is not present, it will get a list of elements of the root folder. To filter element types used header `x-sti-FilterIdent`. It may contain one of the values ​​in the table above Ident. If this header is absent, all elements from the requested collection will be returned. It is also possible to use the header `x-sti-AllowDeleted`, which is responsible for displaying the elements placed in the recycle bin (not removed completely).
 
 
 **CURL example**:
 
-curl -X GET -H "x-sti-SessionKey: ea8cc765d54241e18347a043e187ada3" -H "x-sti-ItemKey: 7800e3265d06418a9ac4feb977fd4040" -H "x-sti-AllowDeleted: true" http://reports.stimulsoft.com/1/items
+`curl -X GET -H "x-sti-SessionKey: ea8cc765d54241e18347a043e187ada3" -H "x-sti-ItemKey: 7800e3265d06418a9ac4feb977fd4040" -H "x-sti-AllowDeleted: true" http://reports.stimulsoft.com/1/items`
 
 
 **Returns**:
 
-The JSON object containing the collection ResultItems, which contains a list of items in the specified folder of the current workspace. The success of the command execution is checked by the content of the field ResultSuccess.
+The JSON object containing the collection `ResultItems`, which contains a list of items in the specified folder of the current workspace. The success of the command execution is checked by the content of the field `ResultSuccess`.
 
 
 **Sample JSON response**
@@ -65,3 +65,29 @@ The JSON object containing the collection ResultItems, which contains a list of 
 }
 ...
 ```
+
+Table of Element Types Used in x-sti-FilterIdent Header
+
+
+| **Name** | **Description** |
+| --- | --- |
+| `Sample` | `"x-sti-FilterIdent: ReportTemplateItem"` |
+| `CalendarItem` | This provides the ability to return a list of calendar items. |
+| `CloudFileItem` | This provides the ability to return a list of cloud file items. |
+| `CloudStorageItem` | This provides the ability to return a list of cloud storage items. |
+| `ContactListItem` | This provides the ability to return a list of contact list items. |
+| `DashboardItem` | This provides the ability to return a list of dashboard items. |
+| `DataQueryItem` | This provides the ability to return a list of data query items. |
+| `DataRelationItem` | This provides the ability to return a list of data relation items. |
+| `DataSnapshotItem` | This provides the ability to return a list of data snapshot items. |
+| `DataSourceItem` | This provides the ability to return a list of data source items. |
+| `DataTableItem` | This provides the ability to return a list of data table items. |
+| `ExcelTableItem` | This provides the ability to return a list of Excel table items. |
+| `FileItem` | This provides the ability to return a list of file items. |
+| `FileStorageItem` | This provides the ability to return a list of file storage items. |
+| `FolderItem` | This provides the ability to return a list of folder items. |
+| `ReportSnapshotItem` | This provides the ability to return a list of report snapshot items. |
+| `ReportTemplateItem` | This provides the ability to return a list of report template items. |
+| `SchedulerItem` | This provides the ability to return a list of scheduler items. |
+| `MailingItem` | This provides the ability to return a list of mailing items. |
+| `LinkItem` | This provides the ability to return a list of link items. |

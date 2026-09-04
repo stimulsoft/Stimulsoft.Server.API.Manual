@@ -7,27 +7,27 @@ Removing a file from the current workspace. However, the use of this command doe
 
 **Url Structure**:
 
-http://reports.stimulsoft.com/1/files/filekey
+`http://reports.stimulsoft.com/1/files/filekey`
 
 
 **Method**:
 
-DELETE
+`DELETE`
 
 
 **Parameters**:
 
-A custom header x-sti-SessionKey contains the session key of the current user. The filekey parameter in the URI is the key of file and indicates the file whose data and resources you want to delete.
+A custom header `x-sti-SessionKey` contains the session key of the current user. The `filekey` parameter in the URI is the key of file and indicates the file whose data and resources you want to delete.
 
 
 **CURL example**:
 
-curl -X DELETE -H "x-sti-SessionKey: 2aa74b48f7c542b9a17cbcfa5d43122d" http://reports.stimulsoft.com/1/files/bad8820fd26e4ab7b04dcc5afa932148
+`curl -X DELETE -H "x-sti-SessionKey: 2aa74b48f7c542b9a17cbcfa5d43122d" http://reports.stimulsoft.com/1/files/bad8820fd26e4ab7b04dcc5afa932148`
 
 
 **Returns**:
 
-The success of the command execution is checked by the content of the field ResultSuccess. ResultTaskKey field contains unique key of internal server tasks, created to remove the file item.
+The success of the command execution is checked by the content of the field ResultSuccess. `ResultTaskKey` field contains unique key of internal server tasks, created to remove the file item.
 
 
 **Sample JSON response**

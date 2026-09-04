@@ -7,27 +7,27 @@ Getting a list of report snapshots in a workspace of the logged-in user. The lis
 
 **Url Structure**:
 
-http://reports.stimulsoft.com/1/reportsnapshots
+`http://reports.stimulsoft.com/1/reportsnapshots`
 
 
 **Method**:
 
-GET
+`GET`
 
 
 **Parameters**:
 
-A custom header x-sti-SessionKey contains the session key of the current user. Custom header x-sti-ItemKey used to identify the parent folder, which list of report snapshots needs to be retrieved. If this header is not present, it will get a list of report snapshots of the root folder.
+A custom header `x-sti-SessionKey` contains the session key of the current user. Custom header `x-sti-ItemKey` used to identify the parent folder, which list of report snapshots needs to be retrieved. If this header is not present, it will get a list of report snapshots of the root folder.
 
 
 **CURL example**:
 
-curl -X GET -H "x-sti-SessionKey: aea7a6197b8c481eaf6077178f69f2bd" http://reports.stimulsoft.com/1/reportsnapshots
+`curl -X GET -H "x-sti-SessionKey: aea7a6197b8c481eaf6077178f69f2bd" http://reports.stimulsoft.com/1/reportsnapshots`
 
 
 **Returns**:
 
-The JSON object containing the collection ResultItems, which contains a list of report snapshots in the specified folder of the current workspace. The success of the command execution is checked by the content of the field ResultSuccess.
+The JSON object containing the collection `ResultItems`, which contains a list of report snapshots in the specified folder of the current workspace. The success of the command execution is checked by the content of the field `ResultSuccess`.
 
 
 **Sample JSON response**

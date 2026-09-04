@@ -7,27 +7,27 @@ Getting information about the element in a workspace of the logged-in user.
 
 **Url Structure**:
 
-http://reports.stimulsoft.com/1/items/itemkey
+`http://reports.stimulsoft.com/1/items/itemkey`
 
 
 **Method**:
 
-GET
+`GET`
 
 
 **Parameters**:
 
-A custom header x-sti-SessionKey contains the session key of the current user. The itemkey parameter in the URI is the key of the element and indicates the element whose data you want to get.
+A custom header `x-sti-SessionKey` contains the session key of the current user. The itemkey parameter in the URI is the key of the element and indicates the element whose data you want to get.
 
 
 **CURL example**:
 
-curl -X GET -H "x-sti-SessionKey: da5053abac4544e9856e05bbda14f46a" http://reports.stimulsoft.com/1/items/d2283e85e9724859bcd024c3f7b982ea
+`curl -X GET -H "x-sti-SessionKey: da5053abac4544e9856e05bbda14f46a" http://reports.stimulsoft.com/1/items/d2283e85e9724859bcd024c3f7b982ea`
 
 
 **Returns**:
 
-The JSON-object containing the field ResultItem, which is the required element of the current workspace. The success of the command execution is checked by the content of the field ResultSuccess.
+The JSON-object containing the field `ResultItem`, which is the required element of the current workspace. The success of the command execution is checked by the content of the field `ResultSuccess`.
 
 
 **Sample JSON response**

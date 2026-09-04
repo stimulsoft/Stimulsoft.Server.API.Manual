@@ -7,27 +7,27 @@ Getting a list of schedulers in a workspace of the logged-in user. The list is r
 
 **Url Structure**:
 
-http://reports.stimulsoft.com/1/schedulers
+`http://reports.stimulsoft.com/1/schedulers`
 
 
 **Method**:
 
-GET
+`GET`
 
 
 **Parameters**:
 
-A custom header x-sti-SessionKey contains the session key of the current user. Custom header x-sti-ItemKey used to identify the parent folder, which list of schedulers needs to be retrieved. If this header is not present, it will get a list of schedulers of the root folder.
+A custom header `x-sti-SessionKey` contains the session key of the current user. Custom header `x-sti-ItemKey` used to identify the parent folder, which list of schedulers needs to be retrieved. If this header is not present, it will get a list of schedulers of the root folder.
 
 
 **CURL example**:
 
-curl -X GET -H "x-sti-SessionKey: ed46247f12fc44cf92f284ff5c8ffc12" http://reports.stimulsoft.com/1/schedulers
+`curl -X GET -H "x-sti-SessionKey: ed46247f12fc44cf92f284ff5c8ffc12" http://reports.stimulsoft.com/1/schedulers`
 
 
 **Returns**:
 
-The JSON object containing the collection ResultItems, which contains a list of schedulers in the specified folder of the current workspace. The success of the command execution is checked by the content of the field ResultSuccess.
+The JSON object containing the collection `ResultItems`, which contains a list of schedulers in the specified folder of the current workspace. The success of the command execution is checked by the content of the field `ResultSuccess`.
 
 
 **Sample JSON response**

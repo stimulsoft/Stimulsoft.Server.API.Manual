@@ -7,27 +7,27 @@ Getting information about the file (including Base64-encoded resource) in a work
 
 **Url Structure**:
 
-http://reports.stimulsoft.com/1/files/filekey
+`http://reports.stimulsoft.com/1/files/filekey`
 
 
 **Method**:
 
-GET
+`GET`
 
 
 **Parameters**:
 
-A custom header x-sti-SessionKey contains the session key of the current user. The filekey parameter in the URI is the key of the file item and indicates the file whose data you want to get.
+A custom header `x-sti-SessionKey` contains the session key of the current user. The filekey parameter in the URI is the key of the file item and indicates the file whose data you want to get.
 
 
 **CURL example**:
 
-curl -X GET -H "x-sti-SessionKey: 2aa74b48f7c542b9a17cbcfa5d43122d" http://reports.stimulsoft.com/1/files/53efd43b18b7455e88d6013369473772
+`curl -X GET -H "x-sti-SessionKey: 2aa74b48f7c542b9a17cbcfa5d43122d" http://reports.stimulsoft.com/1/files/53efd43b18b7455e88d6013369473772`
 
 
 **Returns**:
 
-The JSON object containing the collection ResultCommands with two items. The first has Ident ItemGet and describes the element StiFileItem, the second has Ident ItemResourceGet and describes the resource (file contents). ResultResource field contains data from a file in Base64-form. The success of the command execution is checked by the content of the field ResultSuccess.
+The JSON object containing the collection `ResultCommands` with two items. The first has Ident `ItemGet` and describes the element `StiFileItem`, the second has Ident `ItemResourceGet` and describes the resource (file contents). `ResultResource` field contains data from a file in Base64-form. The success of the command execution is checked by the content of the field `ResultSuccess`.
 
 
 **Sample JSON response**

@@ -7,27 +7,27 @@ Getting a list of roles.
 
 **Url Structure**:
 
-http://reports.stimulsoft.com/1/roles
+`http://reports.stimulsoft.com/1/roles`
 
 
 **Method**:
 
-GET
+`GET`
 
 
 **Parameters**:
 
-A custom header x-sti-SessionKey contains the session key of the current user. You may use header x-sti-WorkspaceKey, containing key workspace that you are requesting a list of roles.
+A custom header `x-sti-SessionKey` contains the session key of the current user. You may use header `x-sti-WorkspaceKey`, containing key workspace that you are requesting a list of roles.
 
 
 **CURL example**:
 
-curl -X GET -H "x-sti-SessionKey: ea8cc765d54241e18347a043e187ada3" http://reports.stimulsoft.com/1/roles
+`curl -X GET -H "x-sti-SessionKey: ea8cc765d54241e18347a043e187ada3" http://reports.stimulsoft.com/1/roles`
 
 
 **Returns**:
 
-The JSON object containing the collection ResultUsers, which is a list of the roles of the current workspace. The success of the command execution is checked by the content of the field ResultSuccess.
+The JSON object containing the collection `ResultUsers`, which is a list of the roles of the current workspace. The success of the command execution is checked by the content of the field `ResultSuccess`.
 
 
 **Sample JSON response**

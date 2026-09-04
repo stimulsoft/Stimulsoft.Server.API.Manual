@@ -6,12 +6,12 @@
 | **Name** | **Description** |
 | --- | --- |
 | [GET List](GET_List.md) | Getting a list of schedulers in a workspace of the logged-in user. The list is returned to the specified folder. |
-| **GET Info** | Getting information about the scheduler in a workspace of the logged-in user. |
-| **POST Create** | Creating a new scheduler in a workspace of the logged-in user. To successfully run the command you must fill the field Scheduler, which is an embedded object and describes the frequency of execution of actions, and contain a collection Actions, which describes a chain of actions. FolderKey field may contain the key of the parent folder, making sure that the scheduler in the tree. If FolderKey empty or not specified, the scheduler is displayed in the root folder. |
-| **PUT Edit** | Changing scheduler in a workspace of the logged-in user. This command does not allow change of the unique scheduler key, which is used as an identifier (field Key), and the type (field Ident = 'SchedulerItem'). Changing field FolderKey can move a scheduler to another folder in the tree (the root, if you specify a null value). |
-| **DELETE** | Removing a scheduler from the current workspace. However, the use of this command does not guarantee the immediate removal of the scheduler from a tree, because the command only creates an internal task of server to delete the scheduler and the actual deletion may be delayed for some time. |
+| [GET Info](GET_Info.md) | Getting information about the scheduler in a workspace of the logged-in user. |
+| [POST Create](POST_Create.md) | Creating a new scheduler in a workspace of the logged-in user. To successfully run the command you must fill the field Scheduler, which is an embedded object and describes the frequency of execution of actions, and contain a collection Actions, which describes a chain of actions. `FolderKey` field may contain the key of the parent folder, making sure that the scheduler in the tree. If FolderKey empty or not specified, the scheduler is displayed in the root folder. |
+| [PUT Edit](PUT_Edit.md) | Changing scheduler in a workspace of the logged-in user. This command does not allow change of the unique scheduler key, which is used as an identifier (field Key), and the type (field Ident = `'SchedulerItem'`). Changing field `FolderKey` can move a scheduler to another folder in the tree (the root, if you specify a null value). |
+| [DELETE](DELETE.md) | Removing a scheduler from the current workspace. However, the use of this command does not guarantee the immediate removal of the scheduler from a tree, because the command only creates an internal task of server to delete the scheduler and the actual deletion may be delayed for some time. |
 | The scheduler can have two states - running (track events and time, and depending on this, the scheduler can run) and stopped (not tracked any external state). The state of the scheduler described by two values - Started or Stopped. |  |
-| **GET Info (Status)** | Getting status of the scheduler. |
-| **PUT Edit (Status)** | Setting status of the scheduler. |
+| [GET Info (Status)](GET_Info_Status.md) | Getting status of the scheduler. |
+| [PUT Edit (Status)](PUT_Edit_Status.md) | Setting status of the scheduler. |
 | The actions described in the scheduler are performed according to a schedule or event. To run the command immediately, use the command Run. |  |
-| **Run** | Manual start of actions the scheduler. |
+| [Run](Run.md) | Manual start of actions the scheduler. |
