@@ -1,4 +1,4 @@
-## GET Info
+# GET Info
 
 **Description**:
 

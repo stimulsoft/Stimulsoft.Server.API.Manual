@@ -1,9 +1,12 @@
-title: Stimulsoft Reports Documentation
-description:
+title: "Stimulsoft Server API"
+description: "API reference for Stimulsoft Server. Documents the REST API endpoints and .NET SDK for managing users, roles, workspaces, report items, files, schedulers, and exporting reports programmatically."
 baseurl: "/Stimulsoft.Server.API.Manual"
-url: "https://stimulsoft.github.io"
+url: "https://docs.stimulsoft.com"
 sidebar_title: "Stimulsoft Server"
 exclude_from_menu: ["Out_Of_Date", "Extra_Text", "Stimulsoft Cloud"]
+product_name: "Stimulsoft Server"
+product_url: "https://www.stimulsoft.com/en/products/server"
+designer_url: "https://designer.stimulsoft.com/"
 
 plugins:
   - jekyll-relative-links

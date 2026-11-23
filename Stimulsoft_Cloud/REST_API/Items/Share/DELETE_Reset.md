@@ -1,4 +1,4 @@
-## DELETE Reset
+# DELETE Reset
 
 **Description**:
 

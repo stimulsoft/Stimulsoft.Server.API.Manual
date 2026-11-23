@@ -1,4 +1,4 @@
-## GET_Info (Status)
+# GET_Info (Status)
 
 **Description**:
 

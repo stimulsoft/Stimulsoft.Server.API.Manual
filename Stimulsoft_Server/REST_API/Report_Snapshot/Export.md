@@ -1,4 +1,4 @@
-## Export
+# Export
 
 The command is used to export data from report snapshot. Data from a snapshot can be exported to one of a supported formats by one of two ways:
 

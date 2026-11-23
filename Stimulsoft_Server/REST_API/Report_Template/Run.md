@@ -1,4 +1,4 @@
-## Run
+# Run
 
 The command is used to render report. To work correctly, you must fist create two items – a report template what will be run, and the destination item where data will be stored. The source item is the current `StiReportTemplate` object. The destination item is the object of type `StiFileItem` or `StiReportSnapshotItem`. If the destination item is the `StiFileItem`, then report is converted to the format specified when creating file item (field '`FileType`'). If the destination item is the `StiReportSnapshotItem`, then rendered report will be saved in the report snapshot item.
 

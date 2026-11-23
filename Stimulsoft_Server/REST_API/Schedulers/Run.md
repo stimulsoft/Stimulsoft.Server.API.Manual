@@ -1,4 +1,4 @@
-## Run
+# Run
 
 The actions described in the scheduler are performed according to a schedule or event. To run the command immediately, use the command `Run`.
 

@@ -6,7 +6,7 @@
 
 # Stimulsoft Server
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/index.md
 
 This documentation part contains instructions to access the functions of Stimulsoft Server. **Stimulsoft Server** is a complete business intelligence, client-server solution that provides reporting and analytics:
 
@@ -24,7 +24,7 @@ This documentation part contains instructions to access the functions of Stimuls
 
 # .NET API
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/index.md
 
 The **Stimulsoft Server** platform provides a full-featured backend solution for your .NET application. API provides quick and easy access to the main functions of the system and automates user actions of Stimulsoft Server in your application. You can use the asynchronous or synchronous methods of some root classes that implement work with basic objects (Users, Roles and Items) of Stimulsoft Server.
 
@@ -32,7 +32,7 @@ The **Stimulsoft Server** platform provides a full-featured backend solution for
 
 # Users
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Users/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Users/index.md
 
 To access information about users of the **Stimulsoft Server**, there is a specialized user class called **StiUserConnection** that automatically handles much of the functionality required for user account management. With this class, you will be able to add user account functionality in your app. In order to use the class **StiUserConnection** you should create an instance of **StiServerConnection** and call one of its methods (**StiServerConnection****.Accounts.****Users**). Access to information about the user provides the **StiUser** class. The user name or the key can obtain an instance of this class. Use for this methods **GetByName()** (**GetByNameAsync()**) and **GetByKey()** (**GetByKeyAsync()**) respectively. There is also fastest way to get an instance of the current user by calling the **Current** property in the **StiServerConnection.Accounts.Users** class.
 
@@ -40,7 +40,7 @@ To access information about users of the **Stimulsoft Server**, there is a speci
 
 # Signing Up
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Users/Signing_Up.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Users/Signing_Up.md
 
 To create a new user, you must use the method **SignUp()** or asynchronous version **SignUpAsync()**:
 
@@ -98,7 +98,7 @@ You must to use an email address as the username.
 
 # Logging In
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Users/Logging_In.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Users/Logging_In.md
 
 Log in registered user the class method **Login()** (**LoginAsync()**):
 
@@ -132,7 +132,7 @@ public async void LogInAsync()
 
 # Getting User Info
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Users/Getting_User_Info.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Users/Getting_User_Info.md
 
 In order to obtain information about the user, use the methods **GetByName()** or **GetByKey()** that return a **StiUser** object. This object contains full information about the user (key of user role, workspace and root folder, OAuth identifier and type of authorization method, first name, last name, user name (email), avatar image, some flags (enabled, activated) and time when this user was created, last modified and last logged). Before calling the method **GetByName()** or **GetByKey()** you must log in as a user whose rights are allowed to have access to the necessary information.
 
@@ -188,7 +188,7 @@ public async void GetUserInfoAsync()
 
 # Getting List of Users
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Users/Getting_List_of_Users.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Users/Getting_List_of_Users.md
 
 To find or process information about users of the system, there is a method that allows you to get a list of all objects **StiUser**, to which the current user can access. Use the method **FetchAll()** (**FetchAllAsync()**).
 
@@ -230,7 +230,7 @@ public async void ProcessUsersInfoAsync()
 
 # Changing User Info
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Users/Changing_User_Info.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Users/Changing_User_Info.md
 
 Passwords are stored in the system in the form of hashes and the StiUser object does not return hem. The method **ChangePassword()** (**ChangePasswordAsync()**)is used to change the password. Using parameters you must specify the current password and a new one:
 
@@ -272,7 +272,7 @@ public async void ChangeUserLastNameAsync()
 
 # Changing User Password
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Users/Changing_User_Password.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Users/Changing_User_Password.md
 
 Passwords are stored in the system in the form of hashes and object **StiUser** not return hem. To change the password used method **ChangePassword()** (**ChangePasswordAsync()**). The parameters you must specify the current password and new:
 
@@ -312,7 +312,7 @@ public async void ChangeUserPasswordAsync()
 
 # Creating New User
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Users/Creating_New_User.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Users/Creating_New_User.md
 
 Creating new users goes through the creation of a new object **StiUser** and it is storing through the methods **Save()** or **SaveAsync()**:
 
@@ -375,7 +375,7 @@ public void NewUserFromRole()
 
 # Deleting User
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Users/Deleting_User.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Users/Deleting_User.md
 
 Remove element by calling **Delete()** (**DeleteAsync()**) the object class **StiUser** or by calling one of the methods **DeleteByKey()**, **DeleteByKeyAsync()**, **DeleteByName()**, **DeleteByNameAsync()** from collection **StiServerConnection****.Accounts.****Users**:
 
@@ -421,7 +421,7 @@ public async void DeleteItemAsync()
 
 # Logging Out
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Users/Logging_Out.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Users/Logging_Out.md
 
 After all actions the user must log out. To do this, you can use the class methods **Logout()** or **LogoutAsync()**.
 
@@ -457,7 +457,7 @@ public async void LogoutAsync()
 
 # Roles
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Roles/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Roles/index.md
 
 **Stimulsoft Server** supports a Role-based Access Control. Role is an object that determines the level of user access to system resources. Members having the same role have the same rights of access to system objects. The most important property of the role is **StiRole.Permissions**. It is an object of the **StiRolePermissions** class that describes a set of permissions (**StiPermissions**) for system objects:
 
@@ -506,7 +506,7 @@ There is also the fastest way to get an instance of the current role by calling 
 
 # Creating and Saving Roles
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Roles/Creating_and_Saving_Roles.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Roles/Creating_and_Saving_Roles.md
 
 To create a new role, you need to log in with a user name that has permission to work with roles, and create an object of the type **StiRole**, and then call its method **StiRole.Save()** (**StiRole.SaveAsync()**):
 
@@ -554,7 +554,7 @@ public async void CreateNewRoleAsync()
 
 # Getting Role Info
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Roles/Getting_Role_Info.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Roles/Getting_Role_Info.md
 
 In order to obtain information about the role, use the methods **GetByKey()** or **GetByKeyAsync()** that return an object **StiRole**. However, a more convenient way, without requiring the key is the use of one of the objects **StiServerConnection****.Accounts.****Roles.AdministratorRole**, **StiServerConnection****.Accounts.****Roles.ManagerRole**, **StiServerConnection****.Accounts.****Roles.UserRole**. Before calling this methods you must log in as a user whose rights are allowed to have access to the necessary information.
 
@@ -605,7 +605,7 @@ public async void GetRoleInfoAsync()
 
 # Getting List of Roles
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Roles/Getting_List_of_Roles.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Roles/Getting_List_of_Roles.md
 
 To find or process information about roles of the system, there is a method that allows you to get a list of all objects **StiRole**, to which the current user can access. Use the method **FetchAll()** (**FetchAllAsync()**).
 
@@ -653,7 +653,7 @@ public async void ProcessUsersInfoAsync()
 
 # Deleting Role
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Roles/Deleting_Role.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Roles/Deleting_Role.md
 
 Remove the role by calling **DeleteByKey()** (**DeleteByKeyAsync()**). Second way is creating an object of the type **StiRole**, and then calling its method **StiRole.Delete()** (**StiRole.DeleteAsync()**):
 
@@ -697,7 +697,7 @@ public async void DeleteRoleAsync()
 
 # Workspaces
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Workspaces/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Workspaces/index.md
 
 For separation of data from different working groups Stimulsoft Server uses the concept of workspaces. Some users work in one workspace and their data are available to other users. Users working in different workspaces do not have access to each other.
 
@@ -713,7 +713,7 @@ There is also the fastest way to get an instance of the current workspace by cal
 
 # Creating and Saving
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Workspaces/Creating_and_Saving.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Workspaces/Creating_and_Saving.md
 
 To create a new workspace, you need to log in with a user name that has permission to work with workspace, and create an object of the type **StiWorkspace**, and then call its method **StiWorkspace.Save()** (**StiWorkspace.SaveAsync()**):
 
@@ -759,7 +759,7 @@ public async void CreateNewWorkspaceAsync()
 
 # Getting Workspace Info
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Workspaces/Getting_Workspace_Info.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Workspaces/Getting_Workspace_Info.md
 
 In order to obtain information about the workspace, use the methods **GetByKey()** or **GetByKeyAsync()** that return the **StiWorkspace** object. Before calling these methods you must log in as a user whose rights are allowed to have access to the necessary information.
 
@@ -809,7 +809,7 @@ public async void GetWorkspaceInfoAsync()
 
 # Getting List of Workspaces
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Workspaces/Getting_List_of_Workspaces.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Workspaces/Getting_List_of_Workspaces.md
 
 To find or process information about workspaces of the system, there is a method that allows you to get a list of all objects **StiWorkspace**, to which the current user can access. Use the method **FetchAll()** (**FetchAllAsync()**).
 
@@ -857,7 +857,7 @@ public async void ProcessWorkspacesInfoAsync()
 
 # Deleting Workspace
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Workspaces/Deleting_Workspace.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Workspaces/Deleting_Workspace.md
 
 To delete a workspace, you must have supervisor rights. A workspace in which the supervisor is registered cannot be deleted. Remove the workspace by calling **DeleteByKey()** (**DeleteByKeyAsync()**). Second way is creating an object of the **StiWorkspace** type, and then calling its method **StiWorkspace.Delete()** (**StiWorkspace.DeleteAsync()**):
 
@@ -901,7 +901,7 @@ public async void DeleteWorkspaceAsync()
 
 # Items
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/index.md
 
 The basis of the **Stimulsoft Server** functionality is operations on items. The item is an object that can be visually observed in the object tree on the left side of the interface of the client application. All items are inherited from the root abstract class **StiItem** and, there is one of the following classes depending on the functionality provided:
 
@@ -925,7 +925,7 @@ The basis of the **Stimulsoft Server** functionality is operations on items. The
 
 # Creating and Saving Items
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Creating_and_Saving_Items.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Creating_and_Saving_Items.md
 
 Position in the hierarchical tree structure of elements defined by the connection element and folders. Therefore, to create the item, you must first create an object of type **StiFolderItem**, specifying its position in the tree, and then use one of the methods to create an item of a particular type. The root element of the tree is represented by an instance of the class **StiFolderItem: StiServerConnection.Items.Root**. After defining properties of the new item is necessary to perform his method **StiItem.Save()** or **StiItem.SaveAsync()**. The following example shows how to create a folder in the root of the tree of elements and add the calendar (describes Monday) to this folder:
 
@@ -973,7 +973,7 @@ public async void CreateNewCalendarItemAsync()
 
 # Sharing Items
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Sharing_Items.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Sharing_Items.md
 
 To work with elements uses a unique identifier - keys. They are assigned automatically when you create elements.
 
@@ -1002,7 +1002,7 @@ The key can be used to specify a particular item in the API and to access an ite
 
 # Getting Item
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Getting_Item.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Getting_Item.md
 
 To get an existing item is necessary to know the key that is passed to the method as a parameter. Use methods **StiItem.GetByKey()** and **StiItem.GetByKeyAsync()**:
 
@@ -1056,7 +1056,7 @@ public async void GetCalendarItemAsync()
 
 # Getting List of Items
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Getting_List_of_Items.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Getting_List_of_Items.md
 
 To find or process items, there is a method that allows you to get a list of all objects **StiItem**, to which the current user can access. Use the method **FetchAll()** (**FetchAllAsync()**).
 
@@ -1098,7 +1098,7 @@ public async void ProcessItemsAsync()
 
 # Deleting Item
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Deleting_Item.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Deleting_Item.md
 
 Remove element by calling **Delete()** (**DeleteAsync()**):
 
@@ -1146,7 +1146,7 @@ public async void DeleteItemAsync()
 
 # Resource Item
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Resource_Item.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Resource_Item.md
 
 Some element types (**StiFileItem**, **StiReportSnapshotItem**, **StiReportTemplateItem**) include resources. Using the methods **UploadFromFile()**, **UploadFromFileAsync()**, **UploadFromArray()**, **UploadFromArrayAsync()**, **DownloadToFile()**, **DownloadToFileAsync()**, **DownloadToArray()**, **DownloadToArrayAsync()**. You can manipulate the data contained in these resources. For example, creating a file on the server with the loading data into it looks like this:
 
@@ -1233,7 +1233,7 @@ public async void DownloadFileAsync()
 
 # Attaching Items to Reports and Files
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Attaching_Items_to_Reports_and_Files.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Attaching_Items_to_Reports_and_Files.md
 
 The elements of type **StiFileItem** and **StiReportTemplateItem** can attach resource elements  (**StiFileItem**, **StiReportSnapshotItem**, **StiReportTemplateItem**). This is done using the method **AttachItem**(**StiResourceItem** **resourceItem**). Detaching the elements is performed using the method **DetachItem(StiResourceItem resourceItem)**. This example shows a file attachment into a report template:
 
@@ -1299,7 +1299,7 @@ public async void AttachXsdToXmlAsync()
 
 # Running Report
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Running_Report.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Running_Report.md
 
 The result of creating Report Template in the tree is a new element type **StiReportTemplateItem**. This object describes the report without data. Designing items of the report is made through the Navigator interface, but managing the construction is possible by means of appropriate methods **StiReportTemplateItem.Run()** and **StiReportTemplateItem.RunAsync()**. The parameter specifies the item **StiReportTemplateItem** or **StiFileItem** where you saved the rendered report. The object must be created before saving. The item **StiFileItem** can be one of the possible types of enumeration **StiFileType** (ReportSnapshot, PDF, XPS, PowerPoint, HTML, Text, RichText, Word, OpenDocumentWriter, Excel, OpenDocumentCalc, Data, Image, XML, XSD, CSV, DBF). One of these values are specified in the method **StiServerConnection.Items.Root.NewFile()** as a parameter. The following example creates a report template, loads data into it and runs the report, after which the result is stored in the report snapshot:
 
@@ -1349,7 +1349,7 @@ public async void RunReportToPdfFileAsync()
 
 # Exporting Report Snapshot
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Exporting_Report_Snapshot.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Exporting_Report_Snapshot.md
 
 The result of the construction of the report from **StiReportTemplateItem** is **StiReportSnapshotItem**. Export data from it can be done by methods **StiReportSnapshotItem.Export()** and **StiReportSnapshotItem.ExportAsync()**. The data is stored in the item **StiFileItem**. It should be created in advance with a specific type the constructor, as described in the previous chapter. Optional parameter method **StiReportSnapshotItem.Export()**  is an object **StiTextExportSet**, which describes many options of visualization in the report to export. This example demonstrates exporting the report snapshot to the Excel Document:
 
@@ -1407,7 +1407,7 @@ public async void ExportSnapshotToXmlAsync()
 
 # Scheduling Actions
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Scheduling_Actions.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Scheduling_Actions.md
 
 **Stimulsoft Server** supports flexible system schedulers that allow the automation of various actions and events schedule. The object StiSchedulerItem inherited from **StiItem** is used to work with the scheduler. After creating an instance of this object, you must add actions using the method **StiSchedulerItem.AddRunReportAction()**. The parameters of this overloaded method take several sets of objects that define the functionality of the scheduler. The minimum set of parameters is as follows:
 
@@ -1580,7 +1580,7 @@ public async void CreateSchedulerAndSetStateAsync()
 
 # Scheduling Frequency
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Scheduling_Frequency.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Scheduling_Frequency.md
 
 The flexibility of the scheduler is implemented through the variety of options for setting the frequency of execution of actions. There are seven types of the scheduler implemented in the classes:
 
@@ -1670,7 +1670,7 @@ public async void CreateSchedulerAndSetFrequencyCalendarAsync()
 
 # Data Sources
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Data_Sources.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/Data_Sources.md
 
 For working with data sources, Stimulsoft Server has a special type of a **StiItem** – **StiDataSourceItem**, which has some specific features and capabilities. **StiDataSourceItem** is an element that provides a connection to a database and retrieves the necessary data for displaying in the report. There are several methods to connect a specific database:
 
@@ -1741,7 +1741,7 @@ public async void RunDataSourceQuerySelectAsync()
 
 # File
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/File.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/NET_API/Items/File.md
 
 For working with uploaded files, Stimulsoft Server has a special type of a **StiItem** - **StiFileItem**, which has some specific features and capabilities. **StiFileItem** is an element that provides storing files, uploaded by users. Some files contain data that can be used in the reports as a data source – these are XLS documents, CSV tables, DBF databases, JSON strings etc. Getting the structured data from these files is possible using the **StiFileItem.GetData** (**StiFileItem.GetDataAsync**) method. At creation of a StiFileItem you must specify the type of data which the loaded file contains. Allowed values listed in enumeration **StiFileType**:
 
@@ -1839,7 +1839,7 @@ public async void FileItemGetDataAsync()
 
 # REST API
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/index.md
 
 REST API allows you quick and easy access to the main functions of **Stimulsoft Server** and automates user actions of the system in your application. Access points to the REST-services should be on your domain and be accessible via HTTP/HTTPS. For example, we will use the locally installed version of Stimulsoft Server with the URL **http://reports.stimulsoft.com**. A relative path begins with the prefix `/1/` which means the first version of REST API.
 
@@ -1902,7 +1902,7 @@ REST API allows you quick and easy access to the main functions of **Stimulsoft 
 
 # Object Model
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Object_Model.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Object_Model.md
 
 The input data for each command are custom HTTP-headers prefixed with `"x-sti-"` and described in the table below:
 
@@ -1979,7 +1979,7 @@ Obviously, if the command does not return HTTP error and successfully passed the
 
 # Sign Up
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Sign_Up.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Sign_Up.md
 
 **Description**:
 
@@ -2034,7 +2034,7 @@ The JSON object containing the field `ResultUserKey` with the key of the new use
 
 # Login
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Login.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Login.md
 
 **Description**:
 
@@ -2110,7 +2110,7 @@ The JSON object containing the field `ResultSessionKey`, which will be further u
 
 # Logout
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Logout.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Logout.md
 
 **Description**:
 
@@ -2151,7 +2151,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # Users
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Users/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Users/index.md
 
 For obtaining the list of users, data modification, as well as to create new users in the current workspace and delete users, use the command `Users` with different methods.
 
@@ -2174,7 +2174,7 @@ Managing user passwords requires a special approach to security, so to change an
 
 # GET List
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Users/GET_List.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Users/GET_List.md
 
 **Description**:
 
@@ -2238,7 +2238,7 @@ The JSON object containing the field `ResultSessionKey`, which is a list of memb
 
 # GET Info
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Users/GET_Info.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Users/GET_Info.md
 
 **Description**:
 
@@ -2289,7 +2289,7 @@ The JSON object containing the field `ResultUsers`, in which there is data on th
 
 # POST Create
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Users/POST_Create.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Users/POST_Create.md
 
 **Description**:
 
@@ -2343,7 +2343,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # PUT Edit
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Users/PUT_Edit.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Users/PUT_Edit.md
 
 **Description**:
 
@@ -2395,7 +2395,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # DELETE
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Users/DELETE.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Users/DELETE.md
 
 **Description**:
 
@@ -2436,7 +2436,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # Change password
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Users/Change_password.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Users/Change_password.md
 
 **Description**:
 
@@ -2488,7 +2488,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # Reset password
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Users/Reset_password.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Users/Reset_password.md
 
 **Description**:
 
@@ -2530,7 +2530,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # Roles
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Roles/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Roles/index.md
 
 Object Role describes permissions for different data types supported by the system. The main characteristic of this object is set `Permissions`, which may contain a table of permissions:
 
@@ -2598,7 +2598,7 @@ To get the list of roles, data modification, and to create new roles in the curr
 
 # GET List
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Roles/GET_List.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Roles/GET_List.md
 
 **Description**:
 
@@ -2719,7 +2719,7 @@ The JSON object containing the collection `ResultUsers`, which is a list of the 
 
 # GET Info
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Roles/GET_Info.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Roles/GET_Info.md
 
 **Description**:
 
@@ -2778,7 +2778,7 @@ The JSON object containing the field `ResultRole`, which is the desired role of 
 
 # POST Create
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Roles/POST_Create.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Roles/POST_Create.md
 
 **Description**:
 
@@ -2845,7 +2845,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # PUT Edit
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Roles/PUT_Edit.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Roles/PUT_Edit.md
 
 **Description**:
 
@@ -2901,7 +2901,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # DELETE
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Roles/DELETE.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Roles/DELETE.md
 
 **Description**:
 
@@ -2942,7 +2942,7 @@ The JSON-object containing the field `ResultSuccess` which indicates that the co
 
 # Items
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/index.md
 
 Items object describes the data items supported by the system. This is an abstract class that combines different types of elements. At creation of an element its type is specified in the Ident field and never changes:
 
@@ -2982,7 +2982,7 @@ To get the list of elements, modify the data, and to create new elements in the 
 
 # GET List
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/GET_List.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/GET_List.md
 
 **Description**:
 
@@ -3073,7 +3073,7 @@ Table of Element Types Used in x-sti-FilterIdent Header
 
 # GET Info
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/GET_Info.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/GET_Info.md
 
 **Description**:
 
@@ -3131,7 +3131,7 @@ The JSON-object containing the field `ResultItem`, which is the required element
 
 # GET Versions
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/GET_Versions.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/GET_Versions.md
 
 **Description**:
 
@@ -3191,7 +3191,7 @@ A JSON object containing the `ResultVersions` collection, which represents the l
 
 # POST Create
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/POST_Create.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/POST_Create.md
 
 **Description**:
 
@@ -3245,7 +3245,7 @@ The JSON-object containing the field `ResultSuccess` which indicates that the co
 
 # PUT Edit
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/PUT_Edit.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/PUT_Edit.md
 
 **Description**:
 
@@ -3298,7 +3298,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # PUT Restore
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/PUT_Restore.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/PUT_Restore.md
 
 **Description**:
 
@@ -3346,7 +3346,7 @@ Returns a JSON object containing the `ResultSuccess` field, which indicates whet
 
 # DELETE
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/DELETE.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/DELETE.md
 
 **Description**:
 
@@ -3388,7 +3388,7 @@ The success of the command execution is checked by the content of the field `Res
 
 # Share
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/Share/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/Share/index.md
 
 Some elements of the navigator tree (`StiFileItem`, `StiReportSnapshotItem`, `StiReportTemplateItem`), can have access from the outside, declared in one of the three levels ShareLevel (`Private`, `Registered` and `Public`). You can also set an expiration date of public access. Software functionality is described using the command Items Share.
 
@@ -3404,7 +3404,7 @@ Some elements of the navigator tree (`StiFileItem`, `StiReportSnapshotItem`, `St
 
 # GET Info
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/Share/GET_Info.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/Share/GET_Info.md
 
 **Description**:
 
@@ -3448,7 +3448,7 @@ JSON-object containing the field with the description of the parameters of publi
 
 # PUT Edit
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/Share/PUT_Edit.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/Share/PUT_Edit.md
 
 **Description**:
 
@@ -3499,7 +3499,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # DELETE Reset
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/Share/DELETE_Reset.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/Share/DELETE_Reset.md
 
 **Description**:
 
@@ -3540,7 +3540,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # Items Attach
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/Share/Items_Attach.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/Share/Items_Attach.md
 
 **Description**:
 
@@ -3581,7 +3581,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # Items Detach
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/Share/Items_Detach.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Items/Share/Items_Detach.md
 
 **Description**:
 
@@ -3622,7 +3622,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # Scheduler
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Schedulers/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Schedulers/index.md
 
 **Schedulers** object describes schedulers - special data elements designed to run different tasks on schedule. This provides the possibility of automation of complex data processing. To get the list of schedulers, information about the status, and launch new tasks in the current workspace, use the command **Schedulers** with different methods. Since schedulers are one type of item, then getting a list of schedulers and detailed information about the scheduler, as well as creating, modifying, and deleting of schedulers may to produce the same as any other items (use the Items command). However, the scheduler have several unique action, so to work with schedulers use the following command.
 
@@ -3643,7 +3643,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Ser
 
 # GET List
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Schedulers/GET_List.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Schedulers/GET_List.md
 
 **Description**:
 
@@ -3714,7 +3714,7 @@ The JSON object containing the collection `ResultItems`, which contains a list o
 
 # GET Info
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Schedulers/GET_Info.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Schedulers/GET_Info.md
 
 **Description**:
 
@@ -3783,7 +3783,7 @@ The JSON object containing the field `ResultItem`, which is the required schedul
 
 # POST Create
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Schedulers/POST_Create.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Schedulers/POST_Create.md
 
 **Description**:
 
@@ -3858,7 +3858,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # PUT Edit
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Schedulers/PUT_Edit.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Schedulers/PUT_Edit.md
 
 **Description**:
 
@@ -3909,7 +3909,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # DELETE
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Schedulers/DELETE.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Schedulers/DELETE.md
 
 **Description**:
 
@@ -3951,7 +3951,7 @@ The success of the command execution is checked by the content of the field `Res
 
 # GET_Info (Status)
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Schedulers/GET_Info_Status.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Schedulers/GET_Info_Status.md
 
 **Description**:
 
@@ -3993,7 +3993,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # PUT Edit (Status)
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Schedulers/PUT_Edit_Status.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Schedulers/PUT_Edit_Status.md
 
 **Description**:
 
@@ -4034,7 +4034,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # Run
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Schedulers/Run.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Schedulers/Run.md
 
 The actions described in the scheduler are performed according to a schedule or event. To run the command immediately, use the command `Run`.
 
@@ -4078,7 +4078,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # Files
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Files/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Files/index.md
 
 Files object describes files - special data elements designed to management of external data and uploading/downloading of user files used to generate reports (data to be imported, images, etc.). This provides the possibility of external resources processing. `FileType` property of `FileItem` describes the content type of the file and can have values from this table:
 
@@ -4120,7 +4120,7 @@ To get the list of files, download and upload resources use the command Files wi
 
 # GET List
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Files/GET_List.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Files/GET_List.md
 
 **Description**:
 
@@ -4185,7 +4185,7 @@ The JSON object containing the collection `ResultItems`, which contains a list o
 
 # GET Download
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Files/GET_Download.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Files/GET_Download.md
 
 **Description**:
 
@@ -4256,7 +4256,7 @@ The JSON object containing the collection `ResultCommands` with two items. The f
 
 # POST Create
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Files/POST_Create.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Files/POST_Create.md
 
 **Description**:
 
@@ -4336,7 +4336,7 @@ The JSON object containing the collection `ResultCommands` with two items. The f
 
 # PUT Append
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Files/PUT_Append.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Files/PUT_Append.md
 
 **Description**:
 
@@ -4394,7 +4394,7 @@ The JSON object containing the collection `ResultCommands` which contain once it
 
 # DELETE
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Files/DELETE.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Files/DELETE.md
 
 **Description**:
 
@@ -4436,7 +4436,7 @@ The success of the command execution is checked by the content of the field Resu
 
 # Report Template
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Template/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Template/index.md
 
 `ReportTemplate` object describes report templates - special data elements what contains the structure of the report. To build this report you need to execute command Run. As a result was obtained an element of type `StiReportSnapshot` – rendered report with data. Since report templates are one type of item, then getting a list of report templates and detailed information about the report templates, as well as creating and deleting of report templates may to produce the same as any other items (use the Items command). However, the report templates have several unique action, so to work with report templates use the following command.
 
@@ -4454,7 +4454,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Ser
 
 # GET List
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Template/GET_List.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Template/GET_List.md
 
 **Description**:
 
@@ -4511,7 +4511,7 @@ The JSON object containing the collection `ResultItems`, which contains a list o
 
 # GET Info
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Template/GET_Info.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Template/GET_Info.md
 
 **Description**:
 
@@ -4568,7 +4568,7 @@ The JSON object containing the field `ResultItem`, which is the required report 
 
 # POST Create
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Template/POST_Create.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Template/POST_Create.md
 
 **Description**:
 
@@ -4621,7 +4621,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # DELETE
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Template/DELETE.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Template/DELETE.md
 
 **Description**:
 
@@ -4663,7 +4663,7 @@ The success of the command execution is checked by the content of the field `Res
 
 # Run
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Template/Run.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Template/Run.md
 
 The command is used to render report. To work correctly, you must fist create two items – a report template what will be run, and the destination item where data will be stored. The source item is the current `StiReportTemplate` object. The destination item is the object of type `StiFileItem` or `StiReportSnapshotItem`. If the destination item is the `StiFileItem`, then report is converted to the format specified when creating file item (field '`FileType`'). If the destination item is the `StiReportSnapshotItem`, then rendered report will be saved in the report snapshot item.
 
@@ -4784,7 +4784,7 @@ Ident parameter may have values - '`Single`', '`Range`' and '`List`'.
 
 # POST Duplicate
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Report_Template/POST_Duplicate.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Report_Template/POST_Duplicate.md
 
 **Description**:
 
@@ -4859,7 +4859,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # Report Snapshot
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Snapshot/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Snapshot/index.md
 
 `ReportSnapshot` object describes report snapshots - special data elements what contains the rendered report. Since `ReportSnapshot` are one type of item, then getting a list of report snapshots and detailed information about the report snapshots, as well as creating and deleting of report snapshots may to produce the same as any other items (use the Items command). However, the report snapshots have several unique action, so to work with report snapshots use the following command.
 
@@ -4876,7 +4876,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Ser
 
 # GET List
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Snapshot/GET_List.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Snapshot/GET_List.md
 
 **Description**:
 
@@ -4938,7 +4938,7 @@ The JSON object containing the collection `ResultItems`, which contains a list o
 
 # GET Info
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Snapshot/GET_Info.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Snapshot/GET_Info.md
 
 **Description**:
 
@@ -4991,7 +4991,7 @@ The JSON object containing the field `ResultItem`, which is the required report 
 
 # POST Create
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Snapshot/POST_Create.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Snapshot/POST_Create.md
 
 **Description**:
 
@@ -5044,7 +5044,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # DELETE
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Snapshot/DELETE.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Snapshot/DELETE.md
 
 **Description**:
 
@@ -5086,7 +5086,7 @@ The success of the command execution is checked by the content of the field `Res
 
 # Export
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Snapshot/Export.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Report_Snapshot/Export.md
 
 The command is used to export data from report snapshot. Data from a snapshot can be exported to one of a supported formats by one of two ways:
 
@@ -5159,7 +5159,7 @@ The JSON object containing the field `ResultSuccess` which indicates that the co
 
 # Export
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/index.md
 
 `ExportSet`-object contain information about settings for data exporting to more files formats. Each of these formats supports unique features, so different types of files there are different sets of settings.
 
@@ -5194,7 +5194,7 @@ Ident describes the format in which you want to export data. Values for this fie
 
 # PDF
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/PDF.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/PDF.md
 
 There are two stages in the export of a report template:
 
@@ -5342,7 +5342,7 @@ The JSON object contains the field `ResultTaskKey` which holds the key of the ex
 
 # XPS
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/XPS.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/XPS.md
 
 There are two stages in the export of a report template:
 
@@ -5491,7 +5491,7 @@ The JSON object contains the field `ResultTaskKey` which holds the key of the ex
 
 # Power Point
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/Power_Point.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/Power_Point.md
 
 There are two stages in the export of a report template:
 
@@ -5640,7 +5640,7 @@ The JSON object contains the field `ResultTaskKey` which holds the key of the ex
 
 # HTML
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/HTML.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/HTML.md
 
 There are two stages in the export of a report template:
 
@@ -5790,7 +5790,7 @@ The JSON object contains the field `ResultTaskKey` which holds the key of the ex
 
 # Text
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/Text.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/Text.md
 
 There are two stages in the export of a report template:
 
@@ -5940,7 +5940,7 @@ The JSON object contains the field `ResultTaskKey` which holds the key of the ex
 
 # Rich Text
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/RichText.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/RichText.md
 
 There are two stages in the export of a report template:
 
@@ -6090,7 +6090,7 @@ The JSON object contains the field `ResultTaskKey` which holds the key of the ex
 
 # Word
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/Word.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/Word.md
 
 There are two stages in the export of a report template:
 
@@ -6240,7 +6240,7 @@ The JSON object contains the field `ResultTaskKey` which holds the key of the ex
 
 # Open Document Writer
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/OpenDocumentWriter.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/OpenDocumentWriter.md
 
 There are two stages in the export of a report template:
 
@@ -6390,7 +6390,7 @@ The JSON object contains the field `ResultTaskKey` which holds the key of the ex
 
 # Excel
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/Excel.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/Excel.md
 
 There are two stages in the export of a report template:
 
@@ -6537,7 +6537,7 @@ The JSON object contains the field `ResultTaskKey` which holds the key of the ex
 
 # Open Document Calc
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/OpenDocumentCalc.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/OpenDocumentCalc.md
 
 There are two stages in the export of a report template:
 
@@ -6686,7 +6686,7 @@ The JSON object contains the field `ResultTaskKey` which holds the key of the ex
 
 # Data
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/Data.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/Data.md
 
 There are two stages in the export of a report template:
 
@@ -6835,7 +6835,7 @@ The JSON object contains the field `ResultTaskKey` which holds the key of the ex
 
 # Image
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/Image.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/Image.md
 
 There are two stages in the export of a report template:
 
@@ -6983,7 +6983,7 @@ The JSON object contains the field `ResultTaskKey` which holds the key of the ex
 
 # Download
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/Download.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/Download.md
 
 **Description**:
 
@@ -7054,7 +7054,7 @@ The JSON object containing the collection `ResultItems`, which contains a list o
 
 # Track Task Status
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/Track_Task_Status.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Server/REST_API/Export/Track_Task_Status.md
 
 **Description**:
 
@@ -7109,7 +7109,7 @@ The JSON object containing the collection `ResultStatus`, which contains a list 
 
 # Stimulsoft Cloud
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/index.md
 
 This documentation part contains instructions to access the functions of Stimulsoft Cloud. **Stimulsoft Cloud** is is a cloud-based service for creating, storing, and then deploying reports in your applications. Stimulsoft Cloud works in a web browser and does not require installation on your computer:
 
@@ -7127,7 +7127,7 @@ This documentation part contains instructions to access the functions of Stimuls
 
 # .NET API
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/index.md
 
 The **Stimulsoft Cloud** platform provides a full-featured backend solution for your .NET application. API provides quick and easy access to the main functions of the system and automates user actions of **Stimulsoft Cloud** in your application. You can use the asynchronous or synchronous methods of some root classes that implement work with basic objects of **Stimulsoft Cloud**.
 
@@ -7135,7 +7135,7 @@ The **Stimulsoft Cloud** platform provides a full-featured backend solution for 
 
 # Users
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Users/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Users/index.md
 
 To access information about users of the **Stimulsoft Cloud**, there is a specialized user class called **StiUserConnection** that automatically handles much of the functionality required for user account management. With this class, you will be able to add user account functionality in your app. In order to use the class **StiUserConnection** you should create an instance of **StiServerConnection** and call one of its methods (**StiServerConnection****.Accounts.****Users**). Access to information about the user provides the **StiUser** class. The user name or the key can obtain an instance of this class. Use for this methods **GetByName()** (**GetByNameAsync()**) and **GetByKey()** (**GetByKeyAsync()**) respectively. There is also fastest way to get an instance of the current user by calling the **Current** property in the **StiServerConnection.Accounts.Users** class.
 
@@ -7143,7 +7143,7 @@ To access information about users of the **Stimulsoft Cloud**, there is a specia
 
 # Signing Up
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Users/Signing_Up.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Users/Signing_Up.md
 
 To create a new user, you must use the method **SignUp()** or asynchronous version **SignUpAsync()**:
 
@@ -7201,7 +7201,7 @@ You must to use an email address as the username.
 
 # Logging In
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Users/Logging_In.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Users/Logging_In.md
 
 Log in registered user the class method **Login()** (**LoginAsync()**):
 
@@ -7235,7 +7235,7 @@ public async void LogInAsync()
 
 # Getting User Info
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Users/Getting_User_Info.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Users/Getting_User_Info.md
 
 In order to obtain information about the user, use the methods **GetByName()** or **GetByKey()** that return a **StiUser** object. This object contains full information about the user (key of user role, workspace and root folder, OAuth identifier and type of authorization method, first name, last name, user name (email), avatar image, some flags (enabled, activated) and time when this user was created, last modified and last logged). Before calling the method **GetByName()** or **GetByKey()** you must log in as a user whose rights are allowed to have access to the necessary information.
 
@@ -7291,7 +7291,7 @@ public async void GetUserInfoAsync()
 
 # Getting List of Users
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Users/Getting_List_of_Users.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Users/Getting_List_of_Users.md
 
 To find or process information about users of the system, there is a method that allows you to get a list of all objects **StiUser**, to which the current user can access. Use the method **FetchAll()** (**FetchAllAsync()**).
 
@@ -7333,7 +7333,7 @@ public async void ProcessUsersInfoAsync()
 
 # Changing User Info
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Users/Changing_User_Info.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Users/Changing_User_Info.md
 
 Passwords are stored in the system in the form of hashes and the **StiUser** object does not return hem. The method **ChangePassword()** (**ChangePasswordAsync()**)is used to change the password. Using parameters you must specify the current password and a new one:
 
@@ -7375,7 +7375,7 @@ public async void ChangeUserLastNameAsync()
 
 # Changing User Password
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Users/Changing_User_Password.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Users/Changing_User_Password.md
 
 Passwords are stored in the system in the form of hashes and object **StiUser** not return hem. To change the password used method **ChangePassword()** (**ChangePasswordAsync()**). The parameters you must specify the current password and new:
 
@@ -7415,7 +7415,7 @@ public async void ChangeUserPasswordAsync()
 
 # Creating New User
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Users/Creating_New_User.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Users/Creating_New_User.md
 
 Creating new users goes through the creation of a new object **StiUser** and it is storing through the methods **Save()** or **SaveAsync()**:
 
@@ -7478,7 +7478,7 @@ public void NewUserFromRole()
 
 # Deleting User
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Users/Deleting_User.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Users/Deleting_User.md
 
 Remove element by calling **Delete()** (**DeleteAsync()**) the object class **StiUser** or by calling one of the methods **DeleteByKey()**, **DeleteByKeyAsync()**, **DeleteByName()**, **DeleteByNameAsync()** from collection **StiServerConnection****.Accounts.****Users**:
 
@@ -7524,7 +7524,7 @@ public async void DeleteItemAsync()
 
 # Logging Out
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Users/Logging_Out.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Users/Logging_Out.md
 
 After all actions the user must log out. To do this, you can use the class methods **Logout()** or **LogoutAsync()**.
 
@@ -7560,7 +7560,7 @@ public async void LogoutAsync()
 
 # Items
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Items/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Items/index.md
 
 The basis of the **Stimulsoft Cloud** functionality is operations on items. The item is an object that can be visually observed in the object tree on the left side of the interface of the client application. All items are inherited from the root abstract class **StiItem** and, there is one of the following classes depending on the functionality provided:
 
@@ -7572,7 +7572,7 @@ The basis of the **Stimulsoft Cloud** functionality is operations on items. The 
 
 # Creating and Saving Items
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Items/Creating_and_Saving_Items.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Items/Creating_and_Saving_Items.md
 
 Position in the hierarchical tree structure of elements defined by the connection element and folders. Therefore, to create the item, you must first create an object of type **StiFolderItem**, specifying its position in the tree, and then use one of the methods to create an item of a particular type. The root element of the tree is represented by an instance of the class **StiFolderItem: StiServerConnection.Items.Root**. After defining properties of the new item is necessary to perform his method **StiItem.Save()** or **StiItem.SaveAsync()**. The following example shows how to create a folder in the root of the tree of elements and add the calendar (describes Monday) to this folder:
 
@@ -7620,7 +7620,7 @@ public async void CreateNewCalendarItemAsync()
 
 # Sharing Items
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Items/Sharing_Items.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Items/Sharing_Items.md
 
 To work with elements uses a unique identifier - keys. They are assigned automatically when you create elements.
 
@@ -7649,7 +7649,7 @@ The key can be used to specify a particular item in the API and to access an ite
 
 # Getting Item
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Items/Getting_Item.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Items/Getting_Item.md
 
 To get an existing item is necessary to know the key that is passed to the method as a parameter. Use methods **StiItem.GetByKey()** and **StiItem.GetByKeyAsync()**:
 
@@ -7703,7 +7703,7 @@ public async void GetCalendarItemAsync()
 
 # Getting List of Items
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Items/Getting_List_of_Items.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Items/Getting_List_of_Items.md
 
 To find or process items, there is a method that allows you to get a list of all objects **StiItem**, to which the current user can access. Use the method **FetchAll()** (**FetchAllAsync()**).
 
@@ -7745,7 +7745,7 @@ public async void ProcessItemsAsync()
 
 # Deleting Item
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Items/Deleting_Item.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Items/Deleting_Item.md
 
 Remove element by calling **Delete()** (**DeleteAsync()**):
 
@@ -7793,7 +7793,7 @@ public async void DeleteItemAsync()
 
 # Resource Item
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Items/Resource_Item.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Items/Resource_Item.md
 
 Some element types (**StiFileItem**, **StiReportSnapshotItem**, **StiReportTemplateItem**) include resources. Using the methods **UploadFromFile()**, **UploadFromFileAsync()**, **UploadFromArray()**, **UploadFromArrayAsync()**, **DownloadToFile()**, **DownloadToFileAsync()**, **DownloadToArray()**, **DownloadToArrayAsync()**. You can manipulate the data contained in these resources. For example, creating a file on the server with the loading data into it looks like this:
 
@@ -7880,7 +7880,7 @@ public async void DownloadFileAsync()
 
 # Running Report
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Items/Running_Report.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/API/Items/Running_Report.md
 
 The result of creating Report Template in the tree is a new element type **StiReportTemplateItem**. This object describes the report without data. Designing items of the report is made through the Navigator interface, but managing the construction is possible by means of appropriate methods **StiReportTemplateItem.Run()** and **StiReportTemplateItem.RunAsync()**. The parameter specifies the item **StiReportTemplateItem** or **StiFileItem** where you saved the rendered report. The object must be created before saving. The item **StiFileItem** can be one of the possible types of enumeration **StiFileType** (ReportSnapshot, PDF, XPS, PowerPoint, HTML, Text, RichText, Word, OpenDocumentWriter, Excel, OpenDocumentCalc, Data, Image, XML, XSD, CSV, DBF). One of these values are specified in the method **StiServerConnection.Items.Root.NewFile()** as a parameter. The following example creates a report template, loads data into it and runs the report, after which the result is stored in the report snapshot:
 
@@ -7930,7 +7930,7 @@ public async void RunReportToPdfFileAsync()
 
 # REST API
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/index.md
 
 REST API allows you quick and easy access to the main functions of **Stimulsoft Cloud** and automates user actions of the system in your application. Access points to the REST-services should be on your domain and be accessible via HTTP/HTTPS. For example, we will use the locally installed version of Stimulsoft Server with the URL **http://cloud.stimulsoft.com**. A relative path begins with the prefix /1/ which means the first version of REST API.
 
@@ -7969,7 +7969,7 @@ REST API allows you quick and easy access to the main functions of **Stimulsoft 
 
 # Object Model
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Object_Model.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Object_Model.md
 
 The input data for each command are custom HTTP-headers prefixed with "x-sti-" and described in the table below:
 
@@ -8045,7 +8045,7 @@ Obviously, if the command does not return HTTP error and successfully passed the
 
 # Sign Up
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/SignUp.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/SignUp.md
 
 **Description**:
 
@@ -8100,7 +8100,7 @@ The JSON object containing the field ResultUserKey with the key of the new user.
 
 # Login
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Login.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Login.md
 
 **Description**:
 
@@ -8171,7 +8171,7 @@ The JSON object containing the field ResultSessionKey, which will be further use
 
 # Logout
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Logout.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Logout.md
 
 **Description**:
 
@@ -8212,7 +8212,7 @@ The JSON object containing the field ResultSuccess which indicates that the comm
 
 # Users
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Users/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Users/index.md
 
 For obtaining the list of users, data modification, as well as to create new users in the cloud and delete users, use the command Users with different methods.
 
@@ -8235,7 +8235,7 @@ Managing user passwords requires a special approach to security, so to change an
 
 # GET List
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Users/Get_List.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Users/Get_List.md
 
 **Description**:
 
@@ -8297,7 +8297,7 @@ The JSON object containing the field ResultSessionKey, which is a list of member
 
 # GET Info
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Users/Get_Info.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Users/Get_Info.md
 
 **Description**:
 
@@ -8346,7 +8346,7 @@ The JSON object containing the field ResultUsers, in which there is data on the 
 
 # POST Create
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Users/Post_Create.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Users/Post_Create.md
 
 **Description**:
 
@@ -8400,7 +8400,7 @@ The JSON object containing the field ResultSuccess which indicates that the comm
 
 # PUT Edit
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Users/Put_Edit.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Users/Put_Edit.md
 
 **Description**:
 
@@ -8452,7 +8452,7 @@ The JSON object containing the field ResultSuccess which indicates that the comm
 
 # DELETE
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Users/Delete.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Users/Delete.md
 
 **Description**:
 
@@ -8493,7 +8493,7 @@ The JSON object containing the field ResultSuccess which indicates that the comm
 
 # Change password
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Users/Change_password.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Users/Change_password.md
 
 **Description**:
 
@@ -8545,7 +8545,7 @@ The JSON object containing the field ResultSuccess which indicates that the comm
 
 # Reset password
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Users/Reset_password.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Users/Reset_password.md
 
 **Description**:
 
@@ -8587,7 +8587,7 @@ The JSON object containing the field ResultSuccess which indicates that the comm
 
 # Items
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Items/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Items/index.md
 
 Items object describes the data items supported by the system. This is an abstract class that combines different types of elements. At creation of an element its type is specified in the Ident field and never changes:
 
@@ -8610,7 +8610,7 @@ To get the list of elements, modify the data, and to create new elements in the 
 
 # GET List
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Items/Get_List.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Items/Get_List.md
 
 **Description**:
 
@@ -8676,7 +8676,7 @@ The JSON object containing the collection ResultItems, which contains a list of 
 
 # GET Info
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Items/GET_Info.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Items/GET_Info.md
 
 **Description**:
 
@@ -8734,7 +8734,7 @@ The JSON-object containing the field ResultItem, which is the required element o
 
 # POST Create
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Items/POST_Create.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Items/POST_Create.md
 
 **Description**:
 
@@ -8788,7 +8788,7 @@ The JSON-object containing the field ResultSuccess which indicates that the comm
 
 # PUT Edit
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Items/PUT_Edit.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Items/PUT_Edit.md
 
 **Description**:
 
@@ -8841,7 +8841,7 @@ The JSON object containing the field ResultSuccess which indicates that the comm
 
 # DELETE
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Items/DELETE.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Items/DELETE.md
 
 **Description**:
 
@@ -8883,7 +8883,7 @@ The success of the command execution is checked by the content of the field Resu
 
 # Share
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Items/Share/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Items/Share/index.md
 
 Some elements of the navigator list, can have access from the outside, declared in one of the three levels ShareLevel (Private and Public). You can also set an expiration date of public access. Manually these parameters can be set on the following form:
 
@@ -8899,7 +8899,7 @@ Software functionality is described using the command Items Share.
 
 # GET Info
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Items/Share/GET_Info.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Items/Share/GET_Info.md
 
 **Description**:
 
@@ -8943,7 +8943,7 @@ JSON-object containing the field with the description of the parameters of publi
 
 # PUT Edit
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Items/Share/PUT_Edit.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Items/Share/PUT_Edit.md
 
 **Description**:
 
@@ -8994,7 +8994,7 @@ The JSON object containing the field ResultSuccess which indicates that the comm
 
 # DELETE Reset
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Items/Share/DELETE_Reset.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Items/Share/DELETE_Reset.md
 
 **Description**:
 
@@ -9035,7 +9035,7 @@ The JSON object containing the field ResultSuccess which indicates that the comm
 
 # Report Template
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Report_Template/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Report_Template/index.md
 
 ReportTemplate object describes report templates - special data elements what contains the structure of the report. To build this report you need to execute command Run. As a result was obtained an element of type StiReportSnapshot – rendered report with data. Since report templates are one type of item, then getting a list of report templates and detailed information about the report templates, as well as creating and deleting of report templates may to produce the same as any other items (use the Items command). However, the report templates have several unique action, so to work with report templates use the following command.
 
@@ -9050,7 +9050,7 @@ ReportTemplate object describes report templates - special data elements what co
 
 # GET List
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Report_Template/GET_List.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Report_Template/GET_List.md
 
 **Description**:
 
@@ -9103,7 +9103,7 @@ The JSON object containing the collection ResultItems, which contains a list of 
 
 # GET Info
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Report_Template/GET_Info.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Report_Template/GET_Info.md
 
 **Description**:
 
@@ -9160,7 +9160,7 @@ The JSON object containing the field ResultItem, which is the required report te
 
 # POST Create
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Report_Template/POST_Create.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Report_Template/POST_Create.md
 
 **Description**:
 
@@ -9213,7 +9213,7 @@ The JSON object containing the field ResultSuccess which indicates that the comm
 
 # DELETE
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Report_Template/DELETE.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Report_Template/DELETE.md
 
 **Description**:
 
@@ -9255,7 +9255,7 @@ The success of the command execution is checked by the content of the field Resu
 
 # Export
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/index.md
 
 ExportSet-object contain information about settings for data exporting to more files formats. Each of these formats supports unique features, so different types of files there are different sets of settings.
 
@@ -9290,7 +9290,7 @@ PageRange describes the pages of the report, which need to be processed. There a
 
 # PDF
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/PDF.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/PDF.md
 
 There are two stages in the export of a report template:
 
@@ -9438,7 +9438,7 @@ The JSON object containing the field ResultSessionKey, which is a list of member
 
 # XPS
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/XPS.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/XPS.md
 
 There are two stages in the export of a report template:
 
@@ -9585,7 +9585,7 @@ The JSON object containing the field ResultSessionKey, which is a list of member
 
 # Power Point
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/Power_Point.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/Power_Point.md
 
 There are two stages in the export of a report template:
 
@@ -9732,7 +9732,7 @@ The JSON object containing the field ResultSessionKey, which is a list of member
 
 # HTML
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/HTML.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/HTML.md
 
 There are two stages in the export of a report template:
 
@@ -9880,7 +9880,7 @@ The JSON object containing the field ResultSessionKey, which is a list of member
 
 # Text
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/Text.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/Text.md
 
 There are two stages in the export of a report template:
 
@@ -10028,7 +10028,7 @@ The JSON object containing the field ResultSessionKey, which is a list of member
 
 # Rich Text
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/RichText.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/RichText.md
 
 There are two stages in the export of a report template:
 
@@ -10176,7 +10176,7 @@ The JSON object containing the field ResultSessionKey, which is a list of member
 
 # Word
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/Word.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/Word.md
 
 There are two stages in the export of a report template:
 
@@ -10324,7 +10324,7 @@ The JSON object containing the field ResultSessionKey, which is a list of member
 
 # Open Document Writer
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/OpenDocumentWriter.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/OpenDocumentWriter.md
 
 There are two stages in the export of a report template:
 
@@ -10472,7 +10472,7 @@ The JSON object containing the field ResultSessionKey, which is a list of member
 
 # Excel
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/Excel.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/Excel.md
 
 There are two stages in the export of a report template:
 
@@ -10617,7 +10617,7 @@ The JSON object containing the field ResultSessionKey, which is a list of member
 
 # Open Document Calc
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/OpenDocumentCalc.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/OpenDocumentCalc.md
 
 There are two stages in the export of a report template:
 
@@ -10764,7 +10764,7 @@ The JSON object containing the field ResultSessionKey, which is a list of member
 
 # Data
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/Data.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/Data.md
 
 There are two stages in the export of a report template:
 
@@ -10911,7 +10911,7 @@ The JSON object containing the field ResultSessionKey, which is a list of member
 
 # Image
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/Image.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/Image.md
 
 There are two stages in the export of a report template:
 
@@ -11057,7 +11057,7 @@ The JSON object containing the field ResultSessionKey, which is a list of member
 
 # Download
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/Download.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Stimulsoft_Cloud/REST_API/Export/Download.md
 
 **Description**:
 
@@ -11128,7 +11128,7 @@ The JSON object containing the collection ResultItems, which contains a list of 
 
 # Extra_Text
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.API.Manual/Extra_Text/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.API.Manual/Extra_Text/index.md
 
 **REST_API.USERS.Reset password**
 

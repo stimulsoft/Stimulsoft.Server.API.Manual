@@ -1,4 +1,4 @@
-## Reset password
+# Reset password
 
 ![](../../../images/topics/Stimulsoft_Cloud.REST_API.Users.Reset_password_1.png)
 
